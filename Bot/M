@@ -290,9 +290,10 @@ Funbot.misc.fortune = [
 " You will be invited to an exciting event."];
 
 Funbot.misc.takeitoff = [
-" well since you asked so nicely :/.",
+" well since you asked so nicely~.",
 " You dont look like you have enough money for that.",
-" I'll show you mine if you show me yours :/.",
+" Im not wearing any undewear",
+" I'll show you mine if you show me yours.",
 " ....I usually dont preform in front of an audience but i will just this once.",
 " Aww Is this your first time here? You pay first sweety."];
 
@@ -319,7 +320,7 @@ $('#woot').click();
  
 function UserJoin(user)
 {
-var JoinMsg = ["@user has Arrived~","Evening, @user!","Hey Sexy :/, @user!","Glad you came by, @user"];
+var JoinMsg = ["@user has Arrived~","Evening, @user!","Hey Sexy :/ , @user!","Glad you came by :wink:, @user","Welcome Home :/ , @user!","Come on in, get comfortable, @user!"];
 r = Math.floor(Math.random() * JoinMsg.length);
 API.sendChat(JoinMsg[r].replace("user", user.username));
 };
@@ -792,7 +793,7 @@ function chatMe(msg)
                         }else if(command[1].toLowerCase().indexOf("xxx") === -1 && command[1].toLowerCase().indexOf("porn") === -1 && command[1].toLowerCase().indexOf("sex") === -1){
                             API.sendChat("@"+ data.from +" http://www.urbandictionary.com/define.php?term="+command[1]);
                         }else{
-                        var idiotMsg = ["Dude wtf is wrong with you search that up yourself.","You sound stupid yo","What do i look like a porn bot?","What are you an idiot?"];
+                        var idiotMsg = ["wtf is wrong with you search that up yourself jerk.","Sweetie..you sound stupid.","What do i look like a porn bot?","What are you an idiot?"];
                             API.sendChat("@"+ data.from +" "+ idiotMsg[Math.floor(Math.random() * idiotMsg.length)]);
                         }
                         if(Funbot.admins.indexOf(fromID) == -1 || API.getUser(fromID).permission < 2){
@@ -1198,8 +1199,8 @@ function chatMe(msg)
                             setTimeout(function(){ Funbot.misc.ready = true; }, Funbot.settings.cooldown * 1000);
                         }
                         break;
-
-                    case "takeitoff":
+                  
+                  case "takeitoff":
                         if(typeof command[1] == "undefined"){
                             var crowd = API.getUsers();
                             var randomUser = Math.floor(Math.random() * crowd.length);
@@ -1231,7 +1232,7 @@ function chatMe(msg)
                             setTimeout(function(){ Funbot.misc.ready = true; }, Funbot.settings.cooldown * 1000);
                         }
                         break;
-                 
+
                     case "catfact":
                         if(typeof command[1] == "undefined"){
                             var crowd = API.getUsers();
