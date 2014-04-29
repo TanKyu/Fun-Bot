@@ -292,7 +292,6 @@ Funbot.misc.fortune = [
 Funbot.misc.takeitoff = [
 " well since you asked so nicely :/.",
 " You dont look like you have enough money for that.",
-" /me Drops Panties",
 " I'll show you mine if you show me yours :/.",
 " ....I usually dont preform in front of an audience but i will just this once.",
 " Aww Is this your first time here? You pay first sweety."];
@@ -1199,8 +1198,8 @@ function chatMe(msg)
                             setTimeout(function(){ Funbot.misc.ready = true; }, Funbot.settings.cooldown * 1000);
                         }
                         break;
-                  
-                  case "takeitoff":
+
+                    case "takeitoff":
                         if(typeof command[1] == "undefined"){
                             var crowd = API.getUsers();
                             var randomUser = Math.floor(Math.random() * crowd.length);
@@ -1232,7 +1231,7 @@ function chatMe(msg)
                             setTimeout(function(){ Funbot.misc.ready = true; }, Funbot.settings.cooldown * 1000);
                         }
                         break;
-
+                 
                     case "catfact":
                         if(typeof command[1] == "undefined"){
                             var crowd = API.getUsers();
