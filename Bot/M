@@ -103,7 +103,7 @@ var blockedArtists = [
 
 // Filter Keywords
 Funbot.filters.beggerWords = ["fanme","fan me","fan4fan","fan 4 fan","fan pls","fans please","more fan","fan back","give me fans","gimme fans","need fan","fan for fan"];
-Funbot.filters.commandWords = [".linkin",".say",".test",".ping",".marco",".reward",".add",".addsong",".flipcoin",".catfact",".dogfact",".hug",".8ball",".fortune",".songlink",".download",".help",".whywoot",".whymeh",".props",".votes",".woot",".meh",".version",".userstats @",".mystats",".source",".roomstats",".roomstats2",".register",".join",".leave",".roll","kiss","seduce",".punish"];
+Funbot.filters.commandWords = [".linkin",".say",".test",".ping",".marco",".reward",".add",".addsong",".flipcoin",".catfact",".dogfact",".hug",".8ball",".fortune",".songlink",".download",".help",".whywoot",".whymeh",".props",".votes",".woot",".meh",".version",".userstats @",".mystats",".source",".roomstats",".roomstats2",".register",".join",".leave",".roll","kiss","seduce",".punish","sex"];
 
 
 // Fun misc
@@ -612,6 +612,22 @@ function chatMe(msg)
                         if(API.getUser(fromID).permission < 2 || API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
                         if(typeof command[1] === "undefined"){
                            API.sendChat("@"+ data.from +" just gave props to @"+ API.getDJ().username +" for playing a dope track!");
+                           }
+                        }
+                        break;
+
+                    case "sex":
+                        if(API.getUser(fromID).permission < 2 || API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
+                        if(typeof command[1] === "undefined"){
+                           API.sendChat("@"+ data.from +" just invited @"+ API.getDJ().username +" back to their place.");
+                           }
+                        }
+                        break;
+
+                    case "wine":
+                        if(API.getUser(fromID).permission < 2 || API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
+                        if(typeof command[1] === "undefined"){
+                           API.sendChat("/me brings @"+ API.getDJ().username +" a glass of wine~");
                            }
                         }
                         break;
