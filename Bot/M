@@ -1172,18 +1172,18 @@ function chatMe(msg)
                             var randomSentence = Math.floor(Math.random() * 2);
                             switch(randomSentence){
                                 case 0:
-                                    API.sendChat("mmm "+command[1]+" 10 forsure..my place in an hr?");
+                                    API.sendChat("mmm @"+command[1]+" 10 forsure..my place in an hr?");
                                     break;
                                 case 1:
                                     API.sendChat("Did you even have to ask?");
                                     setTimeout(function(){
-                                        API.sendChat("/me drags "+command[1]+"'s to a hotel");
+                                        API.sendChat("/me drags @"+command[1]+"'s to a hotel");
                                     }, 650);
                                     break;
                                 case 2:
                                     API.sendChat("Your a stong 8");
                                     setTimeout(function(){
-                                        API.sendChat(" "+command[1]+" coffee sometime?");
+                                        API.sendChat(" @"+command[1]+" coffee sometime?");
                                     }, 650);
                                     break;
                             }
@@ -1192,18 +1192,18 @@ function chatMe(msg)
                             var randomSentence = Math.floor(Math.random() * 2);
                             switch(randomSentence){
                                 case 0:
-                                    API.sendChat("mmm "+command[1]+" 10 forsure..my place in an hr?");
+                                    API.sendChat("mmm @"+command[1]+" 10 forsure..my place in an hr?");
                                     break;
                                 case 1:
                                     API.sendChat("Did you even have to ask?");
                                     setTimeout(function(){
-                                        API.sendChat("/me drags "+command[1]+"'s to a hotel");
+                                        API.sendChat("/me drags @"+command[1]+"'s to a hotel");
                                     }, 650);
                                     break;
                                 case 2:
                                     API.sendChat("Your a stong 8");
                                     setTimeout(function(){
-                                        API.sendChat(" "+command[1]+" coffee sometime?");
+                                        API.sendChat(" @"+command[1]+" coffee sometime?");
                                     }, 650);
                                     break;
                             }
