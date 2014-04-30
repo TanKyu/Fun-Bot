@@ -1458,22 +1458,22 @@ function chatMe(msg)
                             var randomSentence = Math.floor(Math.random() * 1);
                             switch(randomSentence){
                                 case 0:
-                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.gucci[randomGucci]);
+                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.gucci[randomgucci]);
                                     break;
                                 case 1:
-                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.gucci[randomGucci]);
+                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.gucci[randomgucci]);
                                     break;
                             }
                         }else{
                             if(command[1].indexOf("@") === 0) command[1] = command[1].substring(1);
-                            var randomGucci = Math.floor(Math.random() * Funbot.misc.gucci.length);
+                            var randomgucci = Math.floor(Math.random() * Funbot.misc.gucci.length);
                             var randomSentence = Math.floor(Math.random() * 1);
                             switch(randomSentence){
                                 case 0:
-                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.gucci[randomGucci]);
+                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.gucci[randomgucci]);
                                     break;
                                 case 1:
-                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.gucci[randomGucci]);
+                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.gucci[randomgucci]);
                                     break;
                            }
                         }
