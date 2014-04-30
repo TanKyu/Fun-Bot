@@ -639,7 +639,63 @@ function chatMe(msg)
                            }
                         }
                         break;
+
+                    case "pa":
+                        if(API.getUser(fromID).permission < 2 || API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
+                        if(typeof command[1] === "undefined"){
+                           API.sendChat(" http://i.imgur.com/v5tjgfo.jpg ");
+                           }
+                        }
+                        break;
+
+                    case "pa2":
+                        if(API.getUser(fromID).permission < 2 || API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
+                        if(typeof command[1] === "undefined"){
+                           API.sendChat(" http://i.imgur.com/AKtrFmk.jpg ");
+                           }
+                        }
+                        break;
+
+                    case "pa3":
+                        if(API.getUser(fromID).permission < 2 || API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
+                        if(typeof command[1] === "undefined"){
+                           API.sendChat(" http://i.imgur.com/k4o7xWJ.jpg ");
+                           }
+                        }
+                        break;
+
+                    case "pa4":
+                        if(API.getUser(fromID).permission < 2 || API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
+                        if(typeof command[1] === "undefined"){
+                           API.sendChat(" http://i.imgur.com/frgRyT2.jpg ");
+                           }
+                        }
+                        break;
+
+                    case "pa5":
+                        if(API.getUser(fromID).permission < 2 || API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
+                        if(typeof command[1] === "undefined"){
+                           API.sendChat(" http://i.imgur.com/rEJntCc.jpg ");
+                           }
+                        }
+                        break;
                         
+                    case "pa6":
+                        if(API.getUser(fromID).permission < 2 || API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
+                        if(typeof command[1] === "undefined"){
+                           API.sendChat(" http://i.imgur.com/rI6r23O.jpg ");
+                           }
+                        }
+                        break;
+
+                    case "pa7":
+                        if(API.getUser(fromID).permission < 2 || API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
+                        if(typeof command[1] === "undefined"){
+                           API.sendChat(" http://i.imgur.com/shExCPO.jpg ");
+                           }
+                        }
+                        break;
+
                    case "songlink":
                         if(API.getMedia().format == 1){
                             API.sendChat("@" + data.from + " " + "http://youtu.be/" + API.getMedia().cid);
