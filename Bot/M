@@ -631,6 +631,14 @@ function chatMe(msg)
                            }
                         }
                         break;
+
+                    case "bbg":
+                        if(API.getUser(fromID).permission < 2 || API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
+                        if(typeof command[1] === "undefined"){
+                           API.sendChat(" http://cdn.memegenerator.net/instances/500x/47747240.jpg ");
+                           }
+                        }
+                        break;
                         
                    case "songlink":
                         if(API.getMedia().format == 1){
