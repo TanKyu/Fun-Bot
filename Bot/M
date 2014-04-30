@@ -1236,18 +1236,24 @@ function chatMe(msg)
                             var randomSentence = Math.floor(Math.random() * 3);
                             switch(randomSentence){
                                 case 0:
-                                    API.sendChat("mmm @"+command[1]+" 10 forsure..my place in an hr?");
+                                    API.sendChat("from 1 to 10? mmm @"+command[1]+" 10 forsure..my place in an hr?");
                                     break;
                                 case 1:
-                                    API.sendChat("Did you even have to ask?");
+                                    API.sendChat("from 1 to 10? Did you even have to ask?");
                                     setTimeout(function(){
                                         API.sendChat("/me drags @"+command[1]+"'s to a hotel");
                                     }, 650);
                                     break;
                                 case 2:
-                                    API.sendChat("Your a stong 8");
+                                    API.sendChat("from 1 to 10? Your a stong 8");
                                     setTimeout(function(){
                                         API.sendChat(" @"+command[1]+" coffee sometime?");
+                                    }, 650);
+                                    break;
+                                case 3:
+                                    API.sendChat("from 1 to 10? Your a flat 7");
+                                    setTimeout(function(){
+                                        API.sendChat(" @"+command[1]+" but i'd still bang");
                                     }, 650);
                                     break;
                             }
@@ -1723,7 +1729,7 @@ function chatMe(msg)
         }
         if(API.getUser(fromID).permission < 2 || API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
             if(msg.indexOf("ty bot") !== -1 || msg.indexOf("bot ty") !== -1 || msg.indexOf("thank you bot") !== -1 || msg.indexOf("bot thank you") !== -1 || msg.indexOf("thanks bot") !== -1 || msg.indexOf("bot thanks") !== -1 || msg.indexOf("thx bot") !== -1 || msg.indexOf("bot thx") !== -1 || msg.indexOf("thanks for asking bot") !== -1 || msg.indexOf("bot thanks for asking") !== -1 || msg.indexOf("thx for asking bot") !== -1 || msg.indexOf("bot thx for asking") !== -1){
-                var TYMsg = ["You're welcome! :D","welcome ;) !","No prob man.."];
+                var TYMsg = ["You're welcome! :D","welcome ;) !","No prob bae"];
                 API.sendChat("@" + data.from + " " + TYMsg[Math.floor(Math.random() * TYMsg.length)]);
                     Funbot.misc.ready = false;
                     setTimeout(function(){ Funbot.misc.ready = true; }, Funbot.settings.cooldown * 1000);
@@ -1747,14 +1753,22 @@ function chatMe(msg)
         }
         if(API.getUser(fromID).permission < 2 || API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
             if(msg.indexOf("bot shut up") !== -1 || msg.indexOf("shut up bot") !== -1 || msg.indexOf("stfu bot") !== -1 || msg.indexOf("bot stfu") !== -1 || msg.indexOf("hush bot") !== -1 || msg.indexOf("bot hush") !== -1 || msg.indexOf("hush it bot") !== -1 || msg.indexOf("bot hush it") !== -1 || msg.indexOf("be quiet bot") !== -1 || msg.indexOf("bot be quiet") !== -1 || msg.indexOf("shut the hell up bot") !== -1 || msg.indexOf("bot shut the hell up") !== -1){
-                var stfuMsg = ["<Test/ShutUp ... Nope","Eat this http://i.imgur.com/CSq5xkH.gif","No you shut up!","But i was made to talk.. :(","Just because i am a bot doesn't mean you have to tell me to shut up. Why don't you shut up!","Hey idiot! Ever heard of pressing the \"Ignore button\"?"];
+                var stfuMsg = ["<Test/ShutUp ... Nope","Eat this http://i.imgur.com/CSq5xkH.gif","No you shut up!","But i was made to talk.. :(","Just because i am a bot doesn't mean you can to tell me to shut up. Why don't you shut up!","Hey idiot! Ever heard of pressing the \"Ignore button\"?"];
                 API.sendChat("@" + data.from + " " + stfuMsg[Math.floor(Math.random() * stfuMsg.length)]);
                     Funbot.misc.ready = false;
                     setTimeout(function(){ Funbot.misc.ready = true; }, Funbot.settings.cooldown * 1000);
                 }
         }
+        if(API.getUser(fromID).permission < 2 || API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
+            if(msg.indexOf("@MISTRESS_Bot") !== -1){
+                var HRUMsg = ["hey bae","heyy baby",":/ whats up?",":blush: hey you","huh hunny?"];
+                API.sendChat("@" + data.from + " " + HRUMsg[Math.floor(Math.random() * HRUMsg.length)]);
+                    Funbot.misc.ready = false;
+                    setTimeout(function(){ Funbot.misc.ready = true; }, Funbot.settings.cooldown * 1000);
+                }
+        }
         if(msg.indexOf("i got to go") !== -1 || msg.indexOf("igtg") !== -1 || msg.indexOf("gtg") !== -1 || msg.indexOf("be back") !== -1 || msg.indexOf("going off") !== -1 || msg.indexOf("off to") !== -1 || msg.indexOf("have to go") !== -1 || msg.indexOf("bye bot") !== -1 || msg.indexOf("bot bye") !== -1){
-        var AfkMsg = ["See ya man!","Awww, See ya babe.","Glad you came by thanks! :kissing_heart:","Thanks for coming. Hope to see you soon! :blue_heart:"];
+        var AfkMsg = ["See ya bae!","Awww, See ya babe.","Glad you came by thanks! :kissing_heart:","Thanks for coming. see you soon :/ ! :blue_heart:"];
             API.sendChat("@" + data.from + " " + AfkMsg[Math.floor(Math.random() * AfkMsg.length)]);
         }
         if(msg.indexOf(':eyeroll:') > -1){
