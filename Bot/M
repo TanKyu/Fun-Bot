@@ -1185,19 +1185,19 @@ function chatMe(msg)
                             var randomSentence = Math.floor(Math.random() * 3);
                             switch(randomSentence){
                                 case 0:
-                                    API.sendChat("Hugs? Forget that!");
+                                    API.sendChat("Hugs? Fuck that!");
                                     setTimeout(function(){
                                         API.sendChat("/me grabs @"+command[1]+"'s ass");
                                     }, 650);
                                     break;
                                 case 1:
-                                    API.sendChat("/me gives @"+command[1]+" a big bear hug");
+                                    API.sendChat("/me gives @"+command[1]+" a long hug");
                                     break;
                                 case 2:
-                                    API.sendChat("/me gives @"+command[1]+" a soft, furry hug");
+                                    API.sendChat("/me grabs @"+command[1]+"'s ass");
                                     break;
                                 case 3:
-                                    API.sendChat("/me gives @"+command[1]+" an awkward hug");
+                                    API.sendChat("/me gives @"+command[1]+" an sensual hug");
                                     break;
                             }
                         }else{
@@ -1207,19 +1207,19 @@ function chatMe(msg)
                             var randomSentence = Math.floor(Math.random() * 3);
                             switch(randomSentence){
                                 case 0:
-                                    API.sendChat("Hugs? Forget that!");
+                                    API.sendChat("Hugs? Fuck that!");
                                     setTimeout(function(){
                                         API.sendChat("/me grabs @"+command[1]+"'s ass");
                                     }, 650);
                                     break;
                                 case 1:
-                                    API.sendChat("/me gives @"+command[1]+" a big bear hug");
+                                    API.sendChat("/me gives @"+command[1]+" a long hug");
                                     break;
                                 case 2:
-                                    API.sendChat("/me gives @"+command[1]+" a soft, furry hug");
+                                    API.sendChat("/me grabs @"+command[1]+"'s ass");
                                     break;
                                 case 3:
-                                    API.sendChat("/me gives @"+command[1]+" an awkward hug");
+                                    API.sendChat("/me gives @"+command[1]+" an sensual hug");
                                     break;
                             }
                         }
