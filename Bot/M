@@ -1081,7 +1081,7 @@ function chatMe(msg)
                         break;
 
 
-                    case "Seduce":
+                    case "seduce":
                         if(typeof command[1] == "@"){
                             var crowd = API.getUsers();
                             var randomUser = Math.floor(Math.random() * crowd.length);
