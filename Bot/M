@@ -1761,8 +1761,8 @@ function chatMe(msg)
         }
         if(API.getUser(fromID).permission < 2 || API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
             if(msg.indexOf("@MISTRESS_Bot") !== -1){
-                var HRUMsg = ["hey bae","heyy baby",":/ whats up?",":blush: hey you","huh hunny?"];
-                API.sendChat("@" + data.from + " " + HRUMsg[Math.floor(Math.random() * HRUMsg.length)]);
+                var HeyMsg = ["hey bae","heyy baby",":/ whats up?",":blush: hey you","huh hunny?"];
+                API.sendChat("@" + data.from + " " + Heysg[Math.floor(Math.random() * Heysg.length)]);
                     Funbot.misc.ready = false;
                     setTimeout(function(){ Funbot.misc.ready = true; }, Funbot.settings.cooldown * 1000);
                 }
