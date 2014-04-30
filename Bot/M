@@ -1318,7 +1318,7 @@ function chatMe(msg)
                         if(typeof command[1] == "@"){
                             var crowd = API.getUsers();
                             var randomUser = Math.floor(Math.random() * crowd.length);
-                            var randomSentence = Math.floor(Math.random() * 4);
+                            var randomSentence = Math.floor(Math.random() * 5);
                             switch(randomSentence){
                                 case 0:
                                     API.sendChat("Hugs? Fuck that!");
@@ -1334,13 +1334,19 @@ function chatMe(msg)
                                     break;
                                 case 3:
                                     API.sendChat("/me gives @"+command[1]+" an sensual hug");
+                                    break;
+                                case 4:
+                                    API.sendChat("/me gives @"+command[1]+" a hug ");
+                                    setTimeout(function(){
+                                        API.sendChat("/me Then grabs @"+command[1]+"'s ass");
+                                    }, 650);
                                     break;
                             }
                         }else{
                             if(command[1].indexOf("@") === 0) command[1] = command[1].substring(1);
                             var crowd = API.getUsers();
                             var randomUser = Math.floor(Math.random() * crowd.length);
-                            var randomSentence = Math.floor(Math.random() * 4);
+                            var randomSentence = Math.floor(Math.random() * 5);
                             switch(randomSentence){
                                 case 0:
                                     API.sendChat("Hugs? Fuck that!");
@@ -1356,6 +1362,63 @@ function chatMe(msg)
                                     break;
                                 case 3:
                                     API.sendChat("/me gives @"+command[1]+" an sensual hug");
+                                    break;
+                                case 4:
+                                    API.sendChat("/me gives @"+command[1]+" a hug ");
+                                    setTimeout(function(){
+                                        API.sendChat("/me Then grabs @"+command[1]+"'s ass");
+                                    }, 650);
+                                    break;
+                            }
+                        }
+                       if(API.getUser(fromID).permission < 2 || API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
+                            Funbot.misc.ready = false;
+                            setTimeout(function(){ Funbot.misc.ready = true; }, Funbot.settings.cooldown * 1000);
+                        }
+                        break;
+
+                    case "comfort":
+                        if(typeof command[1] == "@"){
+                            var crowd = API.getUsers();
+                            var randomUser = Math.floor(Math.random() * crowd.length);
+                            var randomSentence = Math.floor(Math.random() * 5);
+                            switch(randomSentence){                                
+                                case 0:
+                                    API.sendChat("/me Holds @"+command[1]+"'s hand");
+                                    break;
+                                case 1:
+                                    API.sendChat("/me sits next to @"+command[1]+" :blush: ");
+                                    break;
+                                case 2:
+                                    API.sendChat("/me brings @"+command[1]+" tea");
+                                    break;
+                                case 3:
+                                    API.sendChat("/me kisses @"+command[1]+" cheek");
+                                    break;
+                                case 4:
+                                    API.sendChat("aww would you like something to drink @"+command[1]+" ?");
+                                    break;
+                            }
+                        }else{
+                            if(command[1].indexOf("@") === 0) command[1] = command[1].substring(1);
+                            var crowd = API.getUsers();
+                            var randomUser = Math.floor(Math.random() * crowd.length);
+                            var randomSentence = Math.floor(Math.random() * 5);
+                            switch(randomSentence){
+                                case 0:
+                                    API.sendChat("/me Holds @"+command[1]+"'s hand");
+                                    break;
+                                case 1:
+                                    API.sendChat("/me sits next to @"+command[1]+" :blush: ");
+                                    break;
+                                case 2:
+                                    API.sendChat("/me brings @"+command[1]+" tea");
+                                    break;
+                                case 3:
+                                    API.sendChat("/me kisses @"+command[1]+" cheek");
+                                    break;
+                                case 4:
+                                    API.sendChat("aww would you like something to drink @"+command[1]+" ?");
                                     break;
                             }
                         }
@@ -1643,8 +1706,8 @@ function chatMe(msg)
     API.on(API.CHAT, function(data){
         msg = data.message.toLowerCase(), chatID = data.chatID, fromID = data.fromID;
         if(API.getUser(fromID).permission < 2 || API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
-            if(msg.indexOf('hey bot') !== -1 || msg.indexOf('bot hello') !== -1 || msg.indexOf('hi bot') !== -1 || msg.indexOf('bot hi') !== -1 || msg.indexOf('sup bot') !== -1 || msg.indexOf('bot sup') !== -1 || msg.indexOf('hey bot') !== -1 || msg.indexOf('bot hey') !== -1 || msg.indexOf('howdy bot') !== -1 || msg.indexOf('bot howdy') !== -1 || msg.indexOf('aye bot') !== -1 || msg.indexOf('yo bot') !== -1 || msg.indexOf('waddup bot') !== -1 || msg.indexOf('bot waddup') !== -1){
-                var HelloMsg = ["Hey!","Oh hey there!","hey bae!","Ciao","Hayyy!!!","Suuup!"];
+            if(msg.indexOf('hey bot') !== -1 || msg.indexOf('bot hello') !== -1 || msg.indexOf('hi bot') !== -1 || msg.indexOf('bot hi') !== -1 || msg.indexOf('sup bot') !== -1 || msg.indexOf('bot sup') !== -1 || msg.indexOf('hey bot') !== -1 || msg.indexOf('bot hey') !== -1 || msg.indexOf('howdy bot') !== -1 || msg.indexOf('bot howdy') !== -1 || msg.indexOf('aye bot') !== -1 || msg.indexOf('yo bot') !== -1 || msg.indexOf('waddup bot') !== -1 || msg.indexOf('bot waddup') !== -1 || msg.indexOf('hey @MISTRESS_Bot') !== -1){
+                var HelloMsg = ["Hey!","Oh hey there!","hey bae!","Ciao","Hayyy!!!","Sup boo!"];
                 API.sendChat("@" + data.from + " " + HelloMsg[Math.floor(Math.random() * HelloMsg.length)]);
                     Funbot.misc.ready = false;
                     setTimeout(function(){ Funbot.misc.ready = true; }, Funbot.settings.cooldown * 1000);
@@ -1667,8 +1730,8 @@ function chatMe(msg)
                 }
         }
         if(API.getUser(fromID).permission < 2 || API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
-            if(msg.indexOf("ily bot") !== -1 || msg.indexOf("bot ily") !== -1 || msg.indexOf("i love you bot") !== -1 || msg.indexOf("bot i love you") !== -1 || msg.indexOf("i luv you bot") !== -1 || msg.indexOf("bot i luv you") !== -1 || msg.indexOf("i luv u bot") !== -1 || msg.indexOf("bot i luv u") !== -1 || msg.indexOf("i luv you bot") !== -1 || msg.indexOf("i love you more bot") !== -1 || msg.indexOf("bot love you") !== -1 || msg.indexOf("love you bot") !== -1){
-                var LoveMsg = ["Fuck yeahh!! :D I love you too babe!","I love you too ;).....   Sex?... JK you don't want this big thing ;)","I love you too o.0","Sweet.. Love you too ;)"];
+            if(msg.indexOf("ily bot") !== -1 || msg.indexOf("bot ily") !== -1 || msg.indexOf("i love you bot") !== -1 || msg.indexOf("bot i love you") !== -1 || msg.indexOf("i luv you bot") !== -1 || msg.indexOf("bot i luv you") !== -1 || msg.indexOf("i luv u bot") !== -1 || msg.indexOf("bot i luv u") !== -1 || msg.indexOf("i luv you bot") !== -1 || msg.indexOf("i love you more bot") !== -1 || msg.indexOf("bot love you") !== -1 || msg.indexOf("love you bot") !== -1 || msg.indexOf("love u bot") !== -1){
+                var LoveMsg = ["Fuck yeahh!! :D I love you too babe!","I love you too ;).....   Sex?... JK you couldn't handle this ;)","I love you too :blush:","Sweet.. Love you too ;)"];
                 API.sendChat("@" + data.from + " " + LoveMsg[Math.floor(Math.random() * LoveMsg.length)]);
                     Funbot.misc.ready = false;
                     setTimeout(function(){ Funbot.misc.ready = true; }, Funbot.settings.cooldown * 1000);
