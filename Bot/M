@@ -52,7 +52,7 @@ Funbot.misc.version = "1.1.18";
 Funbot.misc.ready = true;
 var songBoundary = 60 * 10;
 var announcementTick = 60 * 10;
-var lastAnnouncement = 0;
+var lastAnnouncement = 60;
 
 joined = new Date().getTime();
  
@@ -75,8 +75,11 @@ Funbot.settings.removedFilter = true;
 Funbot.admins = ["50aeaeb6c3b97a2cb4c25bd2"];
 
 // Random announcements.
-var announcements = 
-[""];
+var announcements = [
+"Ok....whos panties are these on the floor?",
+"You all are looking p sexy right now but dont get any ideas"
+"who just grabbed my ass?"
+];
 
 // Keywords of blocked songs
 var blockedSongs = [
@@ -440,7 +443,7 @@ function sendAnnouncement()
 {
         if (lastAnnouncement++ >= announcements.length - 1)
         {
-                lastAnnouncement = 0;
+                lastAnnouncement = 60;
         }
     chatMe(announcements[lastAnnouncement]);
 }
@@ -1141,7 +1144,7 @@ function chatMe(msg)
                                     API.sendChat("/me pinches "+command[1]+"'s nipples super hard");
                                     break;
                                 case 5:
-                                    API.sendChat("/me gives "+command[1]+" a wet willy");
+                                    API.sendChat("/me ties up "+command[1]+" ");
                                     break;
                                 case 6:
                                     API.sendChat("/me Sets "+command[1]+" hair on fire");
@@ -1169,7 +1172,7 @@ function chatMe(msg)
                                     API.sendChat("/me pinches "+command[1]+"'s nipples super hard");
                                     break;
                                 case 5:
-                                    API.sendChat("/me gives "+command[1]+" a wet willy");
+                                    API.sendChat("/me ties up "+command[1]+" ");
                                     break;
                                 case 6:
                                     API.sendChat("/me Sets "+command[1]+" hair on fire");
