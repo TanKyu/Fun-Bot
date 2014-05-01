@@ -1233,7 +1233,7 @@ function chatMe(msg)
                         if(typeof command[1] == "@"){
                             var crowd = API.getUsers();
                             var randomUser = Math.floor(Math.random() * crowd.length);
-                            var randomSentence = Math.floor(Math.random() * 4);
+                            var randomSentence = Math.floor(Math.random() * 3);
                             switch(randomSentence){
                                 case 0:
                                     API.sendChat("from 1 to 10? mmm @"+command[1]+" 10 forsure..my place in an hr?");
@@ -1259,27 +1259,21 @@ function chatMe(msg)
                             }
                         }else{
                             if(command[1].indexOf("@") === 0) command[1] = command[1].substring(1);
-                            var randomSentence = Math.floor(Math.random() * 4);
+                            var randomSentence = Math.floor(Math.random() * 3);
                             switch(randomSentence){
                                 case 0:
-                                    API.sendChat("from 1 to 10? mmm @"+command[1]+" 10 forsure..my place in an hr?");
+                                    API.sendChat("mmm @"+command[1]+" 10 forsure..my place in an hr?");
                                     break;
                                 case 1:
-                                    API.sendChat("from 1 to 10? Did you even have to ask?");
+                                    API.sendChat("Did you even have to ask?");
                                     setTimeout(function(){
                                         API.sendChat("/me drags @"+command[1]+"'s to a hotel");
                                     }, 650);
                                     break;
                                 case 2:
-                                    API.sendChat("from 1 to 10? Your a stong 8");
+                                    API.sendChat("Your a stong 8");
                                     setTimeout(function(){
                                         API.sendChat(" @"+command[1]+" coffee sometime?");
-                                    }, 650);
-                                    break;
-                                case 3:
-                                    API.sendChat("from 1 to 10? Your a flat 7");
-                                    setTimeout(function(){
-                                        API.sendChat(" @"+command[1]+" but i'd still bang");
                                     }, 650);
                                     break;
                             }
@@ -1718,7 +1712,7 @@ function chatMe(msg)
     API.on(API.CHAT, function(data){
         msg = data.message.toLowerCase(), chatID = data.chatID, fromID = data.fromID;
         if(API.getUser(fromID).permission < 2 || API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
-            if(msg.indexOf('hey bot') !== -1 || msg.indexOf('bot hello') !== -1 || msg.indexOf('hi bot') !== -1 || msg.indexOf('bot hi') !== -1 || msg.indexOf('sup bot') !== -1 || msg.indexOf('bot sup') !== -1 || msg.indexOf('hey bot') !== -1 || msg.indexOf('bot hey') !== -1 || msg.indexOf('howdy bot') !== -1 || msg.indexOf('bot howdy') !== -1 || msg.indexOf('aye bot') !== -1 || msg.indexOf('yo bot') !== -1 || msg.indexOf('waddup bot') !== -1 || msg.indexOf('bot waddup') !== -1 || msg.indexOf('hey mistress'){
+            if(msg.indexOf('hey bot') !== -1 || msg.indexOf('bot hello') !== -1 || msg.indexOf('hi bot') !== -1 || msg.indexOf('bot hi') !== -1 || msg.indexOf('sup bot') !== -1 || msg.indexOf('bot sup') !== -1 || msg.indexOf('hey bot') !== -1 || msg.indexOf('bot hey') !== -1 || msg.indexOf('howdy bot') !== -1 || msg.indexOf('bot howdy') !== -1 || msg.indexOf('aye bot') !== -1 || msg.indexOf('yo bot') !== -1 || msg.indexOf('waddup bot') !== -1 || msg.indexOf('bot waddup') !== -1 || msg.indexOf('hey @MISTRESS_Bot') !== -1){
                 var HelloMsg = ["Hey!","Oh hey there!","hey bae!","Ciao","Hayyy!!!","Sup boo!"];
                 API.sendChat("@" + data.from + " " + HelloMsg[Math.floor(Math.random() * HelloMsg.length)]);
                     Funbot.misc.ready = false;
@@ -1758,7 +1752,7 @@ function chatMe(msg)
                 }
         }
         if(API.getUser(fromID).permission < 2 || API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
-            if(msg.indexOf("mistress bot") !== -1 || msg.indexOf("hey @MISTRESS_Bot") !== -1){
+            if(msg.indexOf("mistress bot") !== -1 || msg.indexOf("@MISTRESS_Bot") !== -1){
                 var youMsg = ["hey bae","heyy baby",":/ whats up?",":blush: hey you","huh hunny?"];
                 API.sendChat("@" + data.from + " " + youMsg[Math.floor(Math.random() * youMsg.length)]);
                     Funbot.misc.ready = false;
@@ -1781,7 +1775,7 @@ function chatMe(msg)
                     setTimeout(function(){ Funbot.misc.ready = true; }, Funbot.settings.cooldown * 1000);
                 }
         }
-        if(msg.indexOf("i got to go") !== -1 || msg.indexOf("igtg") !== -1 || msg.indexOf("gtg") !== -1 || msg.indexOf("be back") !== -1 || msg.indexOf("going off") !== -1 || msg.indexOf("off to") !== -1 || msg.indexOf("have to go") !== -1 || msg.indexOf("bye bot") !== -1 || msg.indexOf("bot bye") !== -1 || msg.indexOf("im out") !== -1 || msg.indexOf("going to bed") !== -1 || msg.indexOf("going to sleep") !== -1){
+        if(msg.indexOf("i got to go") !== -1 || msg.indexOf("igtg") !== -1 || msg.indexOf("gtg") !== -1 || msg.indexOf("be back") !== -1 || msg.indexOf("going off") !== -1 || msg.indexOf("off to") !== -1 || msg.indexOf("have to go") !== -1 || msg.indexOf("bye bot") !== -1 || msg.indexOf("bot bye") !== -1){
         var AfkMsg = ["See ya bae!","Awww, See ya babe.","Glad you came by thanks! :kissing_heart:","Thanks for coming. see you soon :/ ! :blue_heart:"];
             API.sendChat("@" + data.from + " " + AfkMsg[Math.floor(Math.random() * AfkMsg.length)]);
         }
