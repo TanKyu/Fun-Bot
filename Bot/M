@@ -295,12 +295,17 @@ Funbot.misc.takeitoff = [
 " Im not wearing any undewear",
 " I'll show you mine if you show me yours.",
 " ....I usually dont preform in front of an audience but i will just this once.",
-" Aww Is this your first time here? You pay first sweety."];
+" Aww Is this your first time here? You pay first sweetie.",
+" Nah boo",
+" heh at least tell me im pretty",
+" you not ready for that sweetie",
+"/me undresses"];
 
 Funbot.misc.gucci = [
 " SQUUUUAAD.",
 " BITCH I MIGHT BE.",
-" BURRR"];
+" BURRR",
+" http://37.media.tumblr.com/tumblr_leq4wkbqNI1qg3uqyo1_400.gif"];
 
 Funbot.misc.frawg = [
 " http://i.imgur.com/hglJ0RZ.jpg ",
