@@ -371,6 +371,23 @@ Funbot.misc.babe = [
 "http://fc03.deviantart.net/fs70/f/2013/301/0/9/09bb7975ade00962975b5e4352b40af1-d6s4xr8.jpg",
 "http://fc02.deviantart.net/fs70/i/2014/108/3/5/burn_by_slawa-d7eyp8u.jpg",
 "http://fc08.deviantart.net/fs71/f/2014/093/5/b/5bcc6cfe53285e69f65cddf8ecb46b91-d7cvkn6.jpg",
+" http://24.media.tumblr.com/tumblr_lvd9p4r8Hs1qbt59oo1_500.jpg",
+"http://24.media.tumblr.com/tumblr_lokntk9B2v1qzmkczo1_500.jpg",
+"http://37.media.tumblr.com/babd20964f4397e2a8cf4e68b6b8e0b3/tumblr_mo04mdGkcC1r0b9c9o1_500.jpg",
+"http://24.media.tumblr.com/458692833255ccdf98d3c6bc6e199e76/tumblr_my8hx6yZgF1qjqxmoo1_400.gif",
+"http://31.media.tumblr.com/90b71967ef90b37fbdf035c7eae42db6/tumblr_mme5rqsoNd1r2myrio1_500.png",
+"http://24.media.tumblr.com/5befd675ae97097257ebfa505d05d45d/tumblr_n1is6lxRwx1rjbi2lo1_400.jpg",
+"http://24.media.tumblr.com/3de7a771a47f61b9b0ab0b38a56eccf5/tumblr_n1lfx9ZYhH1r09wbpo1_400.gif",
+"http://37.media.tumblr.com/tumblr_ma3avloaUP1rn3jhgo1_500.jpg",
+"http://24.media.tumblr.com/tumblr_mcp65uiEeo1rx8ox1o1_500.jpg",
+"http://24.media.tumblr.com/dea3b48d3c9c1f616ec9da7d610cf289/tumblr_n19ojc5Xnh1qfsx96o1_1280.jpg",
+"http://37.media.tumblr.com/ec3cbaec73aab932e9e53531b04c8aa9/tumblr_mt7bm5BgAa1ri43kuo1_500.jpg",
+"http://24.media.tumblr.com/d5328c5c78d73df5906d32ad51943043/tumblr_n3bcxiSctZ1ri43kuo1_500.jpg",
+"http://37.media.tumblr.com/bd6b6ab3d19d8422803d7906f0d2a7fa/tumblr_mj62v8FvJ41reppljo1_1280.jpg",
+"http://37.media.tumblr.com/e5d44bc14a49844d504f16deea202494/tumblr_n140wayec91qjqxmoo1_400.gif",
+"http://24.media.tumblr.com/c0817c000aed0f438d500a9dc4b3884b/tumblr_n0jk9iX15L1r8hb6no1_500.jpg",
+"http://37.media.tumblr.com/e942e1f40b28cb55dda1a66862ef7da2/tumblr_n07j1bQ8Pu1rddbpso1_500.jpg",
+"http://24.media.tumblr.com/fa000e43ff70ba72900f0451d312fe93/tumblr_myhvloAdbc1qjqxmoo1_500.jpg",
 ];
  
 Funbot.pubVars.skipOnExceed;
@@ -393,7 +410,7 @@ $('#woot').click();
  
 function UserJoin(user)
 {
-var JoinMsg = ["@user has Arrived~","Evening, @user!","Hey Sexy :/ , @user!","Glad you came by :wink:, @user","Welcome Home :/ , @user!","Come on in, get comfortable, @user!"];
+var JoinMsg = ["@user has Arrived~","Evening, @user!","Hey Sexy :/ , @user!","Glad you came by :wink:, @user","heyyyy :/ , @user!","Come on in, get comfortable, @user!"];
 r = Math.floor(Math.random() * JoinMsg.length);
 API.sendChat(JoinMsg[r].replace("user", user.username));
 };
