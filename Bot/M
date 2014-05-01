@@ -78,8 +78,7 @@ Funbot.admins = ["50aeaeb6c3b97a2cb4c25bd2"];
 var announcements = [
 "Ok....whos panties are these on the floor?",
 "You all are looking p sexy right now but dont get any ideas"
-"who just grabbed my ass?"
-];
+"who just grabbed my"];
 
 // Keywords of blocked songs
 var blockedSongs = [
@@ -443,7 +442,7 @@ function sendAnnouncement()
 {
         if (lastAnnouncement++ >= announcements.length - 1)
         {
-                lastAnnouncement = 60;
+                lastAnnouncement = 0;
         }
     chatMe(announcements[lastAnnouncement]);
 }
