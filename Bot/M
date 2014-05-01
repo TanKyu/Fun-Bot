@@ -1640,7 +1640,7 @@ function chatMe(msg)
                     case "frawg":
                         if(typeof command[1] == "undefined"){
                             var crowd = API.getUsers();
-                            var randomUser = Math.floor(Math.random() * frawg.length);
+                            var randomUser = Math.floor(Math.random() * crowd.length);
                             var randomfrawg = Math.floor(Math.random() * Funbot.misc.frawg.length);
                             var randomSentence = Math.floor(Math.random() * 1);
                             switch(randomSentence){
@@ -1668,7 +1668,7 @@ function chatMe(msg)
                             Funbot.misc.ready = false;
                             setTimeout(function(){ Funbot.misc.ready = true; }, Funbot.settings.cooldown * 1000);
                         }
-                        break;
+                        break;                  
                 }
             }
         }
