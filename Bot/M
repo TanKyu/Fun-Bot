@@ -1141,7 +1141,7 @@ function chatMe(msg)
                                     API.sendChat("/me pinches "+command[1]+"'s nipples super hard");
                                     break;
                                 case 5:
-                                    API.sendChat("/me ties up "+command[1]+" ");
+                                    API.sendChat("/me gives "+command[1]+" a wet willy");
                                     break;
                                 case 6:
                                     API.sendChat("/me Sets "+command[1]+" hair on fire");
@@ -1169,7 +1169,7 @@ function chatMe(msg)
                                     API.sendChat("/me pinches "+command[1]+"'s nipples super hard");
                                     break;
                                 case 5:
-                                    API.sendChat("/me ties up "+command[1]+" ");
+                                    API.sendChat("/me gives "+command[1]+" a wet willy");
                                     break;
                                 case 6:
                                     API.sendChat("/me Sets "+command[1]+" hair on fire");
