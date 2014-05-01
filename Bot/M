@@ -290,16 +290,12 @@ Funbot.misc.fortune = [
 " You will be invited to an exciting event."];
 
 Funbot.misc.takeitoff = [
-" Well since you asked so nicely~.",
+" well since you asked so nicely~.",
 " You dont look like you have enough money for that.",
 " Im not wearing any undewear",
 " I'll show you mine if you show me yours.",
 " ....I usually dont preform in front of an audience but i will just this once.",
-" Aww Is this your first time here? You pay first sweety."
-"i may need some help with that"
-"nah boo"
-"¬_¬"
-"heh atleast tell me im pretty first"];
+" Aww Is this your first time here? You pay first sweety."];
 
 Funbot.misc.gucci = [
 " SQUUUUAAD.",
