@@ -1619,7 +1619,7 @@ function chatMe(msg)
                                     API.sendChat("@" + data.from + ", "+ Funbot.misc.measurements[randommeasurements]);
                                     break;
                                 case 1:
-                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.catfact[randommeasurements]);
+                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.measurements[randommeasurements]);
                                     break;
                             }
                         }else{
@@ -1639,7 +1639,8 @@ function chatMe(msg)
                             Funbot.misc.ready = false;
                             setTimeout(function(){ Funbot.misc.ready = true; }, Funbot.settings.cooldown * 1000);
                         }
-                        break;                  
+                        break;  
+                                        
 
                     case "gucci":
                         if(typeof command[1] == "undefined"){
