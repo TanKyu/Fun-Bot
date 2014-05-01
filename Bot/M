@@ -51,8 +51,8 @@ toSave.moderators = Funbot.moderators;
 Funbot.misc.version = "1.1.18";
 Funbot.misc.ready = true;
 var songBoundary = 60 * 10;
-var announcementTick = 60 * 10;
-var lastAnnouncement = 60;
+var announcementTick = 60;
+var lastAnnouncement = 0;
 
 joined = new Date().getTime();
  
@@ -78,7 +78,7 @@ Funbot.admins = ["50aeaeb6c3b97a2cb4c25bd2"];
 var announcements = [
 "Ok....whos panties are these on the floor?",
 "You all are looking p sexy right now but dont get any ideas"
-"who just grabbed my"];
+"...who just grabbed my ass?"];
 
 // Keywords of blocked songs
 var blockedSongs = [
