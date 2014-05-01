@@ -278,16 +278,7 @@ Funbot.misc.fortune = [
 " You will have a very pleasant experience.",
 " You will inherit some money or a small piece of land.",
 " You will live a long, happy life.",
-" You will spend old age in comfort and material wealth.",
-" You will step on the soil of many countries.",
-" You will take a chance in something in the near future.",
-" You will witness a special ceremony.",
-" Your everlasting patience will be rewarded sooner or later.",
-" Your great attention to detail is both a blessing and a curse.",
-" Your heart is a place to draw true happiness.",
-" Your ability to juggle many tasks will take you far.",
-" A friend asks only for your time, not your money.",
-" You will be invited to an exciting event."];
+];
 
 Funbot.misc.takeitoff = [
 " well since you asked so nicely~.",
