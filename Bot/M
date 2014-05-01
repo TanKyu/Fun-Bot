@@ -310,8 +310,7 @@ Funbot.misc.gucci = [
 Funbot.misc.frawg = [
 " http://i.imgur.com/hglJ0RZ.jpg ",
 " ribbit ribbit baby",
-" FRAAAAAAWG",
-" «Frawg w/ hips"];
+" FRAAAAAAWG"];
 
 Funbot.misc.measurments = [
 " 32 25 36 ",
@@ -388,6 +387,18 @@ Funbot.misc.babe = [
 "http://24.media.tumblr.com/c0817c000aed0f438d500a9dc4b3884b/tumblr_n0jk9iX15L1r8hb6no1_500.jpg",
 "http://37.media.tumblr.com/e942e1f40b28cb55dda1a66862ef7da2/tumblr_n07j1bQ8Pu1rddbpso1_500.jpg",
 "http://24.media.tumblr.com/fa000e43ff70ba72900f0451d312fe93/tumblr_myhvloAdbc1qjqxmoo1_500.jpg",
+"http://fc07.deviantart.net/fs71/f/2014/121/b/b/bb4b88a66cefc81d41c08c4a5a309772-d7gp2gx.jpg",
+"http://fc06.deviantart.net/fs71/f/2010/174/d/3/d3e7af0adb3bc0f4d39740bbde5fe619.jpg",
+"https://24.media.tumblr.com/b44ce95272e52bc963694de37dad6c36/tumblr_mohblbrlEp1qcwiu0o1_500.jpg",
+"https://31.media.tumblr.com/ce05d8b7e5b832154fc5dd0b9f6cfd87/tumblr_n3s53gB0CP1r4xe0so1_500.png",
+"https://31.media.tumblr.com/aaa98b9b07e30d015e22306318f43a5c/tumblr_n239r9HUVq1qkegsbo1_500.jpg",
+"https://31.media.tumblr.com/tumblr_m8cg74X6x41qdwh13o1_500.jpg",
+"https://31.media.tumblr.com/d99dc964e315cd3637d493221a528895/tumblr_myh8w8n7WD1ssfdiao1_500.jpg",
+"https://31.media.tumblr.com/71e0497f3d320b7b66b5f881dcfc8440/tumblr_n4eil5h1GE1rpqy2eo1_500.jpg",
+"https://24.media.tumblr.com/e000e708016792b95462da8a310737c7/tumblr_n4cmmfSa4H1rpqy2eo1_500.jpg",
+"https://31.media.tumblr.com/aa51077a4688df547af74556bad6d5b3/tumblr_n432odIA3U1sumk4po5_500.jpg",
+"http://37.media.tumblr.com/ed63f360d068c9f3be767701d7cd9119/tumblr_mjk5siHq2K1r600xqo1_500.png",
+"http://24.media.tumblr.com/19ade1d0190baab9a01dbf7b1514e12c/tumblr_mpan3kPIKX1r2crwso1_500.jpg",
 ];
  
 Funbot.pubVars.skipOnExceed;
