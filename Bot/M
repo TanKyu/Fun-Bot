@@ -734,6 +734,18 @@ function chatMe(msg)
                            }
                         }
                         break;
+                    
+                    case "dance":
+                        if(API.getUser(fromID).permission < 2 || API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
+                        if(typeof command[1] === "undefined"){
+                           API.sendChat("kiss? Fuck that!");
+                                    setTimeout(function(){
+                                        API.sendChat("/me takes off heels");
+                                    }, 650);
+                                    break;API.sendChat(" c'mon babe, to the dance floor ");
+                           }
+                        }
+                        break;
 
                     case "bbg":
                         if(API.getUser(fromID).permission < 2 || API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
