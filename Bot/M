@@ -711,10 +711,10 @@ function chatMe(msg)
                         }
                         break;
 
-                    case "sex":
+                    case "sexy":
                         if(API.getUser(fromID).permission < 2 || API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
                         if(typeof command[1] === "undefined"){
-                           API.sendChat("@"+ data.from +" just invited @"+ API.getDJ().username +" back to their place.");
+                           API.sendChat("@"+ data.from +" is feeling :/ @"+ API.getDJ().username +" keep it up bb");
                            }
                         }
                         break;
@@ -1262,6 +1262,51 @@ function chatMe(msg)
                                 case 6:
                                     API.sendChat("/me Sets "+command[1]+" hair on fire");
                                     break;
+                            }
+                        }
+                       if(API.getUser(fromID).permission < 2 || API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
+                            Funbot.misc.ready = false;
+                            setTimeout(function(){ Funbot.misc.ready = true; }, Funbot.settings.cooldown * 1000);
+                        }
+                        break;
+
+                    case "sex":
+                        if(typeof command[1] == "@"){
+                            var crowd = API.getUsers();
+                            var randomUser = Math.floor(Math.random() * crowd.length);
+                            var randomSentence = Math.floor(Math.random() * 3);
+                            switch(randomSentence){
+                                case 0:
+                                    API.sendChat("/me leads "+command[1]+" to the bedroom");
+                                    break;
+                                case 1:
+                                    API.sendChat("@"+ data.from +"the bedroom is » that way @"+command[1]+" you two have fun...");
+                                    setTimeout(function(){
+                                        API.sendChat(" or should i make it 3? :wink: ");
+                                    }, 650);
+                                    break;
+                                case 2:
+                                    API.sendChat("@"+ data.from +" has something for you "+command[1]+" you should hurry before i take it~");
+                                    break;                                
+                            }
+                        }else{
+                            if(command[1].indexOf("@") === 0) command[1] = command[1].substring(1);
+                            var crowd = API.getUsers();
+                            var randomUser = Math.floor(Math.random() * crowd.length);
+                            var randomSentence = Math.floor(Math.random() * 3);
+                            switch(randomSentence){
+                                case 0:
+                                    API.sendChat("/me leads "+command[1]+" to the bedroom");
+                                    break;
+                                case 1:
+                                    API.sendChat("@"+ data.from +"the bedroom is » that way @"+command[1]+" you two have fun...");
+                                    setTimeout(function(){
+                                        API.sendChat(" or should i make it 3? :wink: ");
+                                    }, 650);
+                                    break;
+                                case 2:
+                                    API.sendChat("@"+ data.from +" has something for you "+command[1]+" you should hurry before i take it~");
+                                    break;        
                             }
                         }
                        if(API.getUser(fromID).permission < 2 || API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
