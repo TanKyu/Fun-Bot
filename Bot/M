@@ -556,9 +556,9 @@ function chatMe(msg)
                 case "command":
                 case "commands":
                         if(typeof command[1] == "undefined"){
-                            API.sendChat(data.from+" My commands can be found here: http://goo.gl/hJ8WJk");
+                            API.sendChat(data.from+" My commands are: http://i.imgur.com/o9RJzUS.jpg ");
                         }else if(command[1].indexOf("@") > -1){
-                            API.sendChat(command[1]+" My commands can be founnd here: http://goo.gl/hJ8WJk");
+                            API.sendChat(command[1]+" My commands are: http://i.imgur.com/o9RJzUS.jpg ");
                         }
                         break;
                 
