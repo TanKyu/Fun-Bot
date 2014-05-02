@@ -299,7 +299,9 @@ Funbot.misc.takeitoff = [
 " Nah boo",
 " heh at least tell me im pretty",
 " you not ready for that sweetie",
-"/me undresses"];
+"/me undresses"
+"is that all you came here for??"
+];
 
 Funbot.misc.gucci = [
 " SQUUUUAAD.",
@@ -587,7 +589,7 @@ function chatMe(msg)
                         break;        
                         
                 case "skip":
-                       if(API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
+                       if(API.getUser(fromID).permission > 2 || Funbot.admins.indexOf(fromID) > -1){
                             Funbot.skip();
                         }else{
                            API.sendChat("This command requires staff members only!");
@@ -645,7 +647,7 @@ function chatMe(msg)
                         break;
                         
                 case "lock":
-                       if(API.getUser(fromID).permission > 2 || Funbot.admins.indexOf(fromID) > -1){
+                       if(API.getUser(fromID).permission > 3 || Funbot.admins.indexOf(fromID) > -1){
                             API.moderateLockWaitList(true);
                         }else{
                            API.sendChat("This command requires staff members only!");
@@ -653,7 +655,7 @@ function chatMe(msg)
                         break;         
                         
                 case "lockskip":
-                       if(API.getUser(fromID).permission > 2 || Funbot.admins.indexOf(fromID) > -1){
+                       if(API.getUser(fromID).permission > 3 || Funbot.admins.indexOf(fromID) > -1){
                             API.moderateLockWaitList(true);
                             setTimeout("Funbot.skip();", 100);
                             setTimeout("API.moderateLockWaitList(false);", 700);
@@ -663,7 +665,7 @@ function chatMe(msg)
                         break;
                   
                 case "say":
-                        if(API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1 || typeof command[1] === "undefined"){
+                        if(API.getUser(fromID).permission > 4 || Funbot.admins.indexOf(fromID) > -1 || typeof command[1] === "undefined"){
                            API.sendChat(command[1]);
                         }else{
                          API.sendChat("This command requires staff members only!");
