@@ -714,7 +714,7 @@ function chatMe(msg)
                     case "sex":
                         if(API.getUser(fromID).permission < 2 || API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
                         if(typeof command[1] === "undefined"){
-                           API.sendChat("@"+ data.from +" is feeling :/ from this track @"+ API.getDJ().username +" keep it up bb.");
+                           API.sendChat("@"+ data.from +" just invited @"+ API.getDJ().username +" back to their place.");
                            }
                         }
                         break;
