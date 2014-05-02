@@ -746,7 +746,7 @@ function chatMe(msg)
                     case "drinks":
                         if(API.getUser(fromID).permission < 2 || API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
                         if(typeof command[1] === "undefined"){
-                           API.sendChat(" :tropical_drink: Drinks all around :tropical_drink: take one, two? jsut take the whole tray ");
+                           API.sendChat(" :tropical_drink: Drinks all around :tropical_drink: take one, two? just take the whole tray ");
                            }
                         }
                         break;
