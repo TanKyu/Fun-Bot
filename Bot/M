@@ -399,6 +399,7 @@ Funbot.misc.babe = [
 "https://31.media.tumblr.com/aa51077a4688df547af74556bad6d5b3/tumblr_n432odIA3U1sumk4po5_500.jpg",
 "http://37.media.tumblr.com/ed63f360d068c9f3be767701d7cd9119/tumblr_mjk5siHq2K1r600xqo1_500.png",
 "http://24.media.tumblr.com/19ade1d0190baab9a01dbf7b1514e12c/tumblr_mpan3kPIKX1r2crwso1_500.jpg",
+"http://fc05.deviantart.net/fs71/f/2012/200/9/f/a_lucky_streak_by_scottchurch-d57vcr4.jpg"
 ];
  
 Funbot.pubVars.skipOnExceed;
@@ -604,7 +605,7 @@ function chatMe(msg)
                         break;
                         
                 case "unlock":
-                       if(API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
+                       if(API.getUser(fromID).permission > 2 || Funbot.admins.indexOf(fromID) > -1){
                             API.moderateLockWaitList(false);
                         }else{
                            API.sendChat("This command requires staff members only!");
@@ -624,7 +625,7 @@ function chatMe(msg)
                         break;
                         
                 case "ban":
-                       if(API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
+                       if(API.getUser(fromID).permission > 3 || Funbot.admins.indexOf(fromID) > -1){
                             var username = msg.substr(msg.indexOf('@')+1);
                             var userid = getUserID(username);
                             API.moderateBanUser(userid, 0, API.BAN.HOUR);
@@ -654,7 +655,7 @@ function chatMe(msg)
                         break;
                         
                 case "lock":
-                       if(API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
+                       if(API.getUser(fromID).permission > 2 || Funbot.admins.indexOf(fromID) > -1){
                             API.moderateLockWaitList(true);
                         }else{
                            API.sendChat("This command requires staff members only!");
@@ -662,7 +663,7 @@ function chatMe(msg)
                         break;         
                         
                 case "lockskip":
-                       if(API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
+                       if(API.getUser(fromID).permission > 2 || Funbot.admins.indexOf(fromID) > -1){
                             API.moderateLockWaitList(true);
                             setTimeout("Funbot.skip();", 100);
                             setTimeout("API.moderateLockWaitList(false);", 700);
@@ -731,7 +732,7 @@ function chatMe(msg)
                     case "bed":
                         if(API.getUser(fromID).permission < 2 || API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
                         if(typeof command[1] === "undefined"){
-                           API.sendChat("@"+ data.from +" the bedroom is » that way, protection in the top left dresser :/.");
+                           API.sendChat("@"+ data.from +" the bedroom is » that way, protection in the top left dresser drawer :/ .");
                            }
                         }
                         break;
@@ -809,6 +810,7 @@ function chatMe(msg)
                         break;
 
                    case "songlink":
+                   case "link":
                         if(API.getMedia().format == 1){
                             API.sendChat("@" + data.from + " " + "http://youtu.be/" + API.getMedia().cid);
                         }else{
@@ -1363,7 +1365,7 @@ function chatMe(msg)
                                     }, 650);
                                     break;
                                 case 3:
-                                    API.sendChat("from 1 to 10? Your a flat 7");
+                                    API.sendChat("from 1 to 10? You're a flat 7");
                                     setTimeout(function(){
                                         API.sendChat(" @"+command[1]+" but i'd still bang");
                                     }, 650);
@@ -1389,7 +1391,7 @@ function chatMe(msg)
                                     }, 650);
                                     break;
                                 case 3:
-                                    API.sendChat("from 1 to 10? Your a flat 7");
+                                    API.sendChat("from 1 to 10? You're a flat 7");
                                     setTimeout(function(){
                                         API.sendChat(" @"+command[1]+" but i'd still bang");
                                     }, 650);
