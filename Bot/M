@@ -571,9 +571,9 @@ function chatMe(msg)
                 case "command":
                 case "commands":
                         if(typeof command[1] == "undefined"){
-                            API.sendChat(data.from+" My commands are: http://i.imgur.com/o9RJzUS.jpg ");
+                            API.sendChat(data.from+" My commands are: http://i.imgur.com/u6ixpK4.jpg ");
                         }else if(command[1].indexOf("@") > -1){
-                            API.sendChat(command[1]+" My commands are: http://i.imgur.com/o9RJzUS.jpg ");
+                            API.sendChat(command[1]+" My commands are: http://i.imgur.com/u6ixpK4.jpg ");
                         }
                         break;
                 
@@ -729,7 +729,7 @@ function chatMe(msg)
                     case "sexy":
                         if(API.getUser(fromID).permission < 2 || API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
                         if(typeof command[1] === "undefined"){
-                           API.sendChat("@"+ data.from +" is feeling :/ @"+ API.getDJ().username +" keep it up bb");
+                           API.sendChat(" im feeling kind :/ from this track @"+ API.getDJ().username +" keep it up bb");
                            }
                         }
                         break;
