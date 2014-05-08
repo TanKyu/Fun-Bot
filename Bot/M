@@ -404,7 +404,10 @@ Funbot.misc.babe = [
 "http://i.imgur.com/ARt1cXK.jpg",
 "http://i.imgur.com/RCJ2Cah.jpg",
 "http://fc00.deviantart.net/fs70/i/2013/073/a/6/__maxim_oficial__by_misslaurelle-d5y2sge.jpg",
-"http://24.media.tumblr.com/6583b468a182b2af92e46349e7e68190/tumblr_mwqz8g0zuw1qdok1qo1_500.jpg"
+"http://24.media.tumblr.com/6583b468a182b2af92e46349e7e68190/tumblr_mwqz8g0zuw1qdok1qo1_500.jpg",
+"http://i.imgur.com/SSRka0M.png",
+"http://i.imgur.com/0NSTSqf.png",
+"http://i.imgur.com/URXxgoC.jpg"
 ];
  
 Funbot.pubVars.skipOnExceed;
