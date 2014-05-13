@@ -807,6 +807,22 @@ function chatMe(msg)
                         }
                         break;
 
+                    case "stabs":
+                        if(API.getUser(fromID).permission < 2 || API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
+                        if(typeof command[1] === "undefined"){
+                           API.sendChat(" http://cdn.memegenerator.net/instances/500x/49560178.jpg ");
+                           }
+                        }
+                        break;
+
+                    case "stabs2":
+                        if(API.getUser(fromID).permission < 2 || API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
+                        if(typeof command[1] === "undefined"){
+                           API.sendChat(" http://i.imgur.com/n9O0ux6.png ");
+                           }
+                        }
+                        break;
+
                     case "nope":
                         if(API.getUser(fromID).permission < 2 || API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
                         if(typeof command[1] === "undefined"){
