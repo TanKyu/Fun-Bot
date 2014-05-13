@@ -407,7 +407,9 @@ Funbot.misc.babe = [
 "http://24.media.tumblr.com/6583b468a182b2af92e46349e7e68190/tumblr_mwqz8g0zuw1qdok1qo1_500.jpg",
 "http://i.imgur.com/SSRka0M.png",
 "http://i.imgur.com/0NSTSqf.png",
-"http://i.imgur.com/URXxgoC.jpg"
+"http://i.imgur.com/URXxgoC.jpg",
+"http://i.imgur.com/Ddl0mzd.jpg",
+"http://24.media.tumblr.com/tumblr_ly115hmEu91rnrau2o1_400.gif"
 ];
  
 Funbot.pubVars.skipOnExceed;
@@ -801,22 +803,6 @@ function chatMe(msg)
                         if(API.getUser(fromID).permission < 2 || API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
                         if(typeof command[1] === "undefined"){
                            API.sendChat(" http://cdn.memegenerator.net/instances/500x/47747715.jpg ");
-                           }
-                        }
-                        break;
-
-                    case "stabs":
-                        if(API.getUser(fromID).permission < 2 || API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
-                        if(typeof command[1] === "undefined"){
-                           API.sendChat(" http://cdn.memegenerator.net/instances/500x/49560178.jpg ");
-                           }
-                        }
-                        break;
-
-                    case "stabs2":
-                        if(API.getUser(fromID).permission < 2 || API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
-                        if(typeof command[1] === "undefined"){
-                           API.sendChat(" http://i.imgur.com/n9O0ux6.png ");
                            }
                         }
                         break;
