@@ -439,11 +439,6 @@ $('#woot').click();
 };
  
 function UserJoin(user)
-{
-var JoinMsg = ["@user has Arrived~","Evening, @user!","Hey Sexy :/ , @user!","Glad you came by :wink:, @user","heyyyy :/ , @user!","Come on in, get comfortable, @user!"];
-r = Math.floor(Math.random() * JoinMsg.length);
-API.sendChat(JoinMsg[r].replace("user", user.username));
-};
 
 function djAdvanceEvent(data){
 setTimeout(function(){ botMethods.data }, 500);
