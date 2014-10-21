@@ -439,6 +439,11 @@ $('#woot').click();
 };
  
 function UserJoin(user)
+{
+var JoinMsg = [""];
+r = Math.floor(Math.random() * JoinMsg.length);
+API.sendChat(JoinMsg[r].replace("user", user.username));
+};
 
 function djAdvanceEvent(data){
 setTimeout(function(){ botMethods.data }, 500);
