@@ -1907,10 +1907,10 @@ function chatMe(msg)
                             var randomSentence = Math.floor(Math.random() * 1);
                             switch(randomSentence){
                                 case 0:
-                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.babe[randombabe]);
+                                    API.sendChat(", "+ Funbot.misc.babe[randombabe]);
                                     break;
                                 case 1:
-                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.babe[randombabe]);
+                                    API.sendChat(", "+ Funbot.misc.babe[randombabe]);
                                     break;
                             }
                         }else{
@@ -1919,10 +1919,10 @@ function chatMe(msg)
                             var randomSentence = Math.floor(Math.random() * 1);
                             switch(randomSentence){
                                 case 0:
-                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.babe[randombabe]);
+                                    API.sendChat(", "+ Funbot.misc.babe[randombabe]);
                                     break;
                                 case 1:
-                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.babe[randombabe]);
+                                    API.sendChat(", "+ Funbot.misc.babe[randombabe]);
                                     break;
                            }
                         }
