@@ -301,6 +301,14 @@ Funbot.misc.takeitoff = [
 " you not ready for that sweetie",
 "/me undresses"];
 
+Funbot.misc.beadsqueak = [
+"heh you're gonna have to work hard to make my bead rock~",
+"errr ehh errr ehhh",
+"i'll make your bed squeak bb",
+"Your hear that too? can u go tell them to keep it down? thx :kiss:",
+"such a familiar sound~",
+"you look too unexperienced for that sweety"];
+
 Funbot.misc.gucci = [
 " SQUUUUAAD.",
 " BITCH I MIGHT BE.",
@@ -1763,6 +1771,39 @@ function chatMe(msg)
                                     break;
                                 case 1:
                                     API.sendChat(""+ Funbot.misc.takeitoff[randomtakeitoff]);
+                                    break;
+                           }
+                        }
+                       if(API.getUser(fromID).permission < 2 || API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
+                            Funbot.misc.ready = false;
+                            setTimeout(function(){ Funbot.misc.ready = true; }, Funbot.settings.cooldown * 1000);
+                        }
+                        break;
+
+                  case "bedsqueak":
+                        if(typeof command[1] == "undefined"){
+                            var crowd = API.getUsers();
+                            var randomUser = Math.floor(Math.random() * crowd.length);
+                            var randombedsqueak = Math.floor(Math.random() * Funbot.misc.bedsqueak.length);
+                            var randomSentence = Math.floor(Math.random() * 1);
+                            switch(randomSentence){
+                                case 0:
+                                    API.sendChat(""+ Funbot.misc.bedsqueak[randombedsqueak]);
+                                    break;
+                                case 1:
+                                    API.sendChat(""+ Funbot.misc.bedsqueak[randombedsqueak]);
+                                    break;
+                            }
+                        }else{
+                            if(command[1].indexOf("@") === 0) command[1] = command[1].substring(1);
+                            var randombedsqueak = Math.floor(Math.random() * Funbot.misc.bedsqueak.length);
+                            var randomSentence = Math.floor(Math.random() * 1);
+                            switch(randomSentence){
+                                case 0:
+                                    API.sendChat(""+ Funbot.misc.bedsqueak[randombedsqueak]);
+                                    break;
+                                case 1:
+                                    API.sendChat(""+ Funbot.misc.bedsqueak[randombedsqueak]);
                                     break;
                            }
                         }
