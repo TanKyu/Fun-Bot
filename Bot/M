@@ -1608,7 +1608,7 @@ function chatMe(msg)
                         if(typeof command[1] == "@"){
                             var crowd = API.getUsers();
                             var randomUser = Math.floor(Math.random() * crowd.length);
-                            var randomSentence = Math.floor(Math.random() * 5);
+                            var randomSentence = Math.floor(Math.random() * 6);
                             switch(randomSentence){                                
                                 case 0:
                                     API.sendChat("/me Holds @"+command[1]+"'s hand");
@@ -1625,12 +1625,15 @@ function chatMe(msg)
                                 case 4:
                                     API.sendChat("aww would you like something to drink @"+command[1]+" ?");
                                     break;
+                                case 5:
+                                    API.sendChat("/me cuddles @"+command[1]+" ");
+                                    break;
                             }
                         }else{
                             if(command[1].indexOf("@") === 0) command[1] = command[1].substring(1);
                             var crowd = API.getUsers();
                             var randomUser = Math.floor(Math.random() * crowd.length);
-                            var randomSentence = Math.floor(Math.random() * 5);
+                            var randomSentence = Math.floor(Math.random() * 6);
                             switch(randomSentence){
                                 case 0:
                                     API.sendChat("/me Holds @"+command[1]+"'s hand");
@@ -1646,6 +1649,9 @@ function chatMe(msg)
                                     break;
                                 case 4:
                                     API.sendChat("aww would you like something to drink @"+command[1]+" ?");
+                                    break;
+                                case 5:
+                                    API.sendChat("/me cuddles @"+command[1]+" ");
                                     break;
                             }
                         }
@@ -1741,10 +1747,10 @@ function chatMe(msg)
                             var randomSentence = Math.floor(Math.random() * 1);
                             switch(randomSentence){
                                 case 0:
-                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.takeitoff[randomtakeitoff]);
+                                    API.sendChat(""+ Funbot.misc.takeitoff[randomtakeitoff]);
                                     break;
                                 case 1:
-                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.takeitoff[randomtakeitoff]);
+                                    API.sendChat(""+ Funbot.misc.takeitoff[randomtakeitoff]);
                                     break;
                             }
                         }else{
@@ -1753,10 +1759,10 @@ function chatMe(msg)
                             var randomSentence = Math.floor(Math.random() * 1);
                             switch(randomSentence){
                                 case 0:
-                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.takeitoff[randomtakeitoff]);
+                                    API.sendChat(""+ Funbot.misc.takeitoff[randomtakeitoff]);
                                     break;
                                 case 1:
-                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.takeitoff[randomtakeitoff]);
+                                    API.sendChat(""+ Funbot.misc.takeitoff[randomtakeitoff]);
                                     break;
                            }
                         }
@@ -1907,7 +1913,7 @@ function chatMe(msg)
                             var randomSentence = Math.floor(Math.random() * 1);
                             switch(randomSentence){
                                 case 0:
-                                    API.sendChat(", "+ Funbot.misc.babe[randombabe]);
+                                    API.sendChat(""+ Funbot.misc.babe[randombabe]);
                                     break;
                                 case 1:
                                     API.sendChat(""+ Funbot.misc.babe[randombabe]);
@@ -2146,7 +2152,5 @@ function chatMe(msg)
         });
     }, 3000);
  
-    API.sendChat('heyy :/');
-   }else{
-    alert("This bot can only function at http://plug.dj/community");
+    
    };
