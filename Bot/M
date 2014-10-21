@@ -1907,10 +1907,10 @@ function chatMe(msg)
                             var randomSentence = Math.floor(Math.random() * 1);
                             switch(randomSentence){
                                 case 0:
-                                    API.sendChat(", "+ Funbot.misc.babe[randombabe]);
+                                    API.sendChat(""+ Funbot.misc.babe[randombabe]);
                                     break;
                                 case 1:
-                                    API.sendChat(", "+ Funbot.misc.babe[randombabe]);
+                                    API.sendChat(""+ Funbot.misc.babe[randombabe]);
                                     break;
                             }
                         }else{
@@ -1919,10 +1919,10 @@ function chatMe(msg)
                             var randomSentence = Math.floor(Math.random() * 1);
                             switch(randomSentence){
                                 case 0:
-                                    API.sendChat(", "+ Funbot.misc.babe[randombabe]);
+                                    API.sendChat(""+ Funbot.misc.babe[randombabe]);
                                     break;
                                 case 1:
-                                    API.sendChat(", "+ Funbot.misc.babe[randombabe]);
+                                    API.sendChat(""+ Funbot.misc.babe[randombabe]);
                                     break;
                            }
                         }
@@ -2146,7 +2146,3 @@ function chatMe(msg)
         });
     }, 3000);
  
-    API.sendChat('Your Mistress Has Arrived :/ v.'+Funbot.misc.version+'');
-   }else{
-    alert("This bot can only function at http://plug.dj/community");
-   };
