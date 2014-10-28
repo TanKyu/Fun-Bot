@@ -1925,10 +1925,10 @@ function chatMe(msg)
                             var randomSentence = Math.floor(Math.random() * 1);
                             switch(randomSentence){
                                 case 0:
-                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.frawg[randomfrawg]);
+                                    API.sendChat(""+ Funbot.misc.frawg[randomfrawg]);
                                     break;
                                 case 1:
-                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.frawg[randomfrawg]);
+                                    API.sendChat(""+ Funbot.misc.frawg[randomfrawg]);
                                     break;
                             }
                         }else{
@@ -1937,10 +1937,10 @@ function chatMe(msg)
                             var randomSentence = Math.floor(Math.random() * 1);
                             switch(randomSentence){
                                 case 0:
-                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.frawg[randomfrawg]);
+                                    API.sendChat(""+ Funbot.misc.frawg[randomfrawg]);
                                     break;
                                 case 1:
-                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.frawg[randomfrawg]);
+                                    API.sendChat(""+ Funbot.misc.frawg[randomfrawg]);
                                     break;
                            }
                         }
@@ -1958,10 +1958,10 @@ function chatMe(msg)
                             var randomSentence = Math.floor(Math.random() * 1);
                             switch(randomSentence){
                                 case 0:
-                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.sex[randomsex]);
+                                    API.sendChat(""+ Funbot.misc.sex[randomsex]);
                                     break;
                                 case 1:
-                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.sex[randomsex]);
+                                    API.sendChat(""+ Funbot.misc.sex[randomsex]);
                                     break;
                             }
                         }else{
@@ -1970,10 +1970,10 @@ function chatMe(msg)
                             var randomSentence = Math.floor(Math.random() * 1);
                             switch(randomSentence){
                                 case 0:
-                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.sex[randomsex]);
+                                    API.sendChat(""+ Funbot.misc.sex[randomsex]);
                                     break;
                                 case 1:
-                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.sex[randomsex]);
+                                    API.sendChat(""+ Funbot.misc.sex[randomsex]);
                                     break;
                            }
                         }
