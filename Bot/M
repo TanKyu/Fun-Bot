@@ -331,6 +331,17 @@ Funbot.misc.frawg = [
 " ribbit ribbit baby",
 " FRAAAAAAWG"];
 
+Funbot.misc.moan = [
+" uhhh no ",
+" :/ your gonna have to work for that",
+" ...."];
+
+Funbot.misc.thot = [
+" ~_~ ",
+" is who you go to when i turn you down",
+" http://www.comedycentral.co.uk/sites/default/files/gallery/large/13_0.gif",
+"http://31.media.tumblr.com/6b2feb7bd433f72230fb588e4b0a8337/tumblr_n5y8q1m1Nq1rby04wo1_500.gif"];
+
 Funbot.misc.measurments = [
 " try & guess..",
 " thats classified, but you can look & try to guess",
@@ -1718,7 +1729,7 @@ function chatMe(msg)
                             setTimeout(function(){ Funbot.misc.ready = true; }, Funbot.settings.cooldown * 1000);
                         }
                         break;
-                  
+                  case "strip":
                   case "takeitoff":
                         if(typeof command[1] == "undefined"){
                             var crowd = API.getUsers();
@@ -1884,6 +1895,39 @@ function chatMe(msg)
                         }
                         break;
 
+                  case "moan":
+                        if(typeof command[1] == "undefined"){
+                            var crowd = API.getUsers();
+                            var randomUser = Math.floor(Math.random() * crowd.length);
+                            var randommoan = Math.floor(Math.random() * Funbot.misc.moan.length);
+                            var randomSentence = Math.floor(Math.random() * 1);
+                            switch(randomSentence){
+                                case 0:
+                                    API.sendChat(""+ Funbot.misc.moan[randommoan]);
+                                    break;
+                                case 1:
+                                    API.sendChat(""+ Funbot.misc.moan[randommoan]);
+                                    break;
+                            }
+                        }else{
+                            if(command[1].indexOf("@") === 0) command[1] = command[1].substring(1);
+                            var randommoan = Math.floor(Math.random() * Funbot.misc.moan.length);
+                            var randomSentence = Math.floor(Math.random() * 1);
+                            switch(randomSentence){
+                                case 0:
+                                    API.sendChat(""+ Funbot.misc.moan[randommoan]);
+                                    break;
+                                case 1:
+                                    API.sendChat(""+ Funbot.misc.moan[randommoan]);
+                                    break;
+                           }
+                        }
+                       if(API.getUser(fromID).permission < 2 || API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
+                            Funbot.misc.ready = false;
+                            setTimeout(function(){ Funbot.misc.ready = true; }, Funbot.settings.cooldown * 1000);
+                        }
+                        break;
+
                   case "versace":
                         if(typeof command[1] == "undefined"){
                             var crowd = API.getUsers();
@@ -1981,7 +2025,40 @@ function chatMe(msg)
                             Funbot.misc.ready = false;
                             setTimeout(function(){ Funbot.misc.ready = true; }, Funbot.settings.cooldown * 1000);
                         }
-                        break;               
+                        break;  
+
+                    case "thot":
+                        if(typeof command[1] == "undefined"){
+                            var crowd = API.getUsers();
+                            var randomUser = Math.floor(Math.random() * crowd.length);
+                            var randomthot = Math.floor(Math.random() * Funbot.misc.thot.length);
+                            var randomSentence = Math.floor(Math.random() * 1);
+                            switch(randomSentence){
+                                case 0:
+                                    API.sendChat(""+ Funbot.misc.thot[randomthot]);
+                                    break;
+                                case 1:
+                                    API.sendChat(""+ Funbot.misc.thot[randomthot]);
+                                    break;
+                            }
+                        }else{
+                            if(command[1].indexOf("@") === 0) command[1] = command[1].substring(1);
+                            var randomthot = Math.floor(Math.random() * Funbot.misc.thot.length);
+                            var randomSentence = Math.floor(Math.random() * 1);
+                            switch(randomSentence){
+                                case 0:
+                                    API.sendChat(""+ Funbot.misc.thot[randomthot]);
+                                    break;
+                                case 1:
+                                    API.sendChat(""+ Funbot.misc.thot[randomthot]);
+                                    break;
+                           }
+                        }
+                       if(API.getUser(fromID).permission < 2 || API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
+                            Funbot.misc.ready = false;
+                            setTimeout(function(){ Funbot.misc.ready = true; }, Funbot.settings.cooldown * 1000);
+                        }
+                        break;                   
 
                     case "measurments":
                         if(typeof command[1] == "undefined"){
