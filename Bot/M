@@ -340,14 +340,15 @@ Funbot.misc.sex = [
 " the beds »» that way, find someone to join you ;)",
 " the beds »» that way, find someone to join you ;)....or maybe I should come with you~",
 " you don't look like you have the stamina for me sweetie",
-"nah",
-"~_~",
-":eyes:",
-":point_right: :ok_hand:",
-":bikini:  :eggplant: :eyes: :rocket: :/",
-":nail_care: nah"];
+" nah",
+" ~_~",
+" :eyes:",
+" :point_right: :ok_hand:",
+" :bikini:  :eggplant: :eyes: :rocket: :/",
+" :nail_care: nah"];
 
 Funbot.misc.nope = [
+"http://i.imgur.com/dEFHI.gif",
 "http://i.imgur.com/dEFHI.gif"];
 
 Funbot.misc.hab = [
@@ -2347,6 +2348,7 @@ function chatMe(msg)
                             setTimeout(function(){ Funbot.misc.ready = true; }, Funbot.settings.cooldown * 1000);
                         }
                         break;
+
                     case "nope":
                         if(typeof command[1] == "undefined"){
                             var crowd = API.getUsers();
@@ -2421,22 +2423,22 @@ function chatMe(msg)
                             var randomSentence = Math.floor(Math.random() * 1);
                             switch(randomSentence){
                                 case 0:
-                                    API.sendChat(""+ Funbot.misc.hab[randomhab2]);
+                                    API.sendChat(""+ Funbot.misc.hab2[randomhab2]);
                                     break;
                                 case 1:
-                                    API.sendChat(""+ Funbot.misc.hab[randomhab2]);
+                                    API.sendChat(""+ Funbot.misc.hab2[randomhab2]);
                                     break;
                             }
                         }else{
                             if(command[1].indexOf("@") === 0) command[1] = command[1].substring(1);
-                            var randomhab2 = Math.floor(Math.random() * Funbot.misc.hab.length);
+                            var randomhab2 = Math.floor(Math.random() * Funbot.misc.hab2.length);
                             var randomSentence = Math.floor(Math.random() * 1);
                             switch(randomSentence){
                                 case 0:
-                                    API.sendChat(""+ Funbot.misc.hab[randomhab2]);
+                                    API.sendChat(""+ Funbot.misc.hab2[randomhab2]);
                                     break;
                                 case 1:
-                                    API.sendChat(""+ Funbot.misc.hab[randomhab2]);
+                                    API.sendChat(""+ Funbot.misc.hab2[randomhab2]);
                                     break;
                            }
                         }
@@ -2454,22 +2456,22 @@ function chatMe(msg)
                             var randomSentence = Math.floor(Math.random() * 1);
                             switch(randomSentence){
                                 case 0:
-                                    API.sendChat(""+ Funbot.misc.hab[randombondage]);
+                                    API.sendChat(""+ Funbot.misc.bondage[randombondage]);
                                     break;
                                 case 1:
-                                    API.sendChat(""+ Funbot.misc.hab[randombondage]);
+                                    API.sendChat(""+ Funbot.misc.bondage[randombondage]);
                                     break;
                             }
                         }else{
                             if(command[1].indexOf("@") === 0) command[1] = command[1].substring(1);
-                            var randombondage = Math.floor(Math.random() * Funbot.misc.bondageb.length);
+                            var randombondage = Math.floor(Math.random() * Funbot.misc.bondage.length);
                             var randomSentence = Math.floor(Math.random() * 1);
                             switch(randomSentence){
                                 case 0:
-                                    API.sendChat(""+ Funbot.misc.hab[randombondage]);
+                                    API.sendChat(""+ Funbot.misc.bondage[randombondage]);
                                     break;
                                 case 1:
-                                    API.sendChat(""+ Funbot.misc.hab[randombondage]);
+                                    API.sendChat(""+ Funbot.misc.bondage[randombondage]);
                                     break;
                            }
                         }
