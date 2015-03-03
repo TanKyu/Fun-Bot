@@ -2423,7 +2423,7 @@ function chatMe(msg)
                             var randomSentence = Math.floor(Math.random() * 1);
                             switch(randomSentence){
                                 case 0:
-                                    API.sendChat(""+ Funbot.misc.roleplay[randomroleplayb]);
+                                    API.sendChat(""+ Funbot.misc.roleplay[randomroleplay]);
                                     break;
                                 case 1:
                                     API.sendChat(""+ Funbot.misc.roleplay[randomroleplay]);
