@@ -305,6 +305,10 @@ Funbot.misc.lapdance = [
 " umm some other time, k.",
 " take a seat babe ;)"];
 
+Funbot.misc.call = [
+" umm some other time, k.",
+" take a seat babe ;)"];
+
 Funbot.misc.bedsqueak = [
 "heh you're gonna have to work hard to make my bead rock~",
 "errr ehh errr ehhh",
