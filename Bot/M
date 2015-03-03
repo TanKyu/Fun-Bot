@@ -2282,7 +2282,9 @@ function chatMe(msg)
                             setTimeout(function(){ Funbot.misc.ready = true; }, Funbot.settings.cooldown * 1000);
                         }
                         break;
-
+                    
+                    case "letsfuck":
+                    case "fuckme":
                     case "sex2":
                         if(typeof command[1] == "undefined"){
                             var crowd = API.getUsers();
