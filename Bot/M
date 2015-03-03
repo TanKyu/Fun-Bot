@@ -785,7 +785,7 @@ function chatMe(msg)
                         }
                         break;
 
-                    case "hot":
+                    case "sdf":
                         if(API.getUser(fromID).permission < 2 || API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
                         if(typeof command[1] === "undefined"){
                            API.sendChat("@"+ API.getDJ().username +" this track is :fire: :wink:!");
@@ -793,7 +793,7 @@ function chatMe(msg)
                         }
                         break;
 
-                    case "sexy":
+                    case "sdfs":
                         if(API.getUser(fromID).permission < 2 || API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
                         if(typeof command[1] === "undefined"){
                            API.sendChat(" im feeling kind :/ from this track @"+ API.getDJ().username +" keep it up bb");
