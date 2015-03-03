@@ -343,9 +343,10 @@ Funbot.misc.sex2 = [
 " nah",
 " ~_~",
 " :eyes:",
-" :point_right: :ok_hand:",
+" :point_right: :ok_hand:?",
 " :bikini:  :eggplant: :eyes: :rocket: :/",
-" :nail_care: nah"];
+" :nail_care: nah",
+"http://media.giphy.com/media/3efuhK1gdRGsE/giphy.gif"];
 
 Funbot.misc.nope = [
 "http://i.imgur.com/dEFHI.gif",
@@ -1861,10 +1862,10 @@ function chatMe(msg)
                             var randomSentence = Math.floor(Math.random() * 1);
                             switch(randomSentence){
                                 case 0:
-                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.dogfact[randomDogfact]);
+                                    API.sendChat(""+ Funbot.misc.dogfact[randomDogfact]);
                                     break;
                                 case 1:
-                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.dogfact[randomDogfact]);
+                                    API.sendChat(""+ Funbot.misc.dogfact[randomDogfact]);
                                     break;
                             }
                         }else{
@@ -1873,10 +1874,10 @@ function chatMe(msg)
                             var randomSentence = Math.floor(Math.random() * 1);
                             switch(randomSentence){
                                 case 0:
-                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.dogfact[randomdogfact]);
+                                    API.sendChat(""+ Funbot.misc.dogfact[randomdogfact]);
                                     break;
                                 case 1:
-                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.dogfact[randomDogfact]);
+                                    API.sendChat(""+ Funbot.misc.dogfact[randomDogfact]);
                                     break;
                            }
                         }
@@ -2514,8 +2515,9 @@ function chatMe(msg)
                             Funbot.misc.ready = false;
                             setTimeout(function(){ Funbot.misc.ready = true; }, Funbot.settings.cooldown * 1000);
                         }
-                        break;                                                 
-
+                        break;  
+                                                                       
+                    case "selfie":
                     case "babe":
                     case "bae":
                         if(typeof command[1] == "undefined"){
