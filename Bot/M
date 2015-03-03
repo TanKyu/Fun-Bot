@@ -1005,8 +1005,14 @@ function chatMe(msg)
                            API.sendChat("This command requires bouncer +");
                         }
                         break;
- 
-                  
+
+                    case "votes":
+                        if(API.getUser(fromID).permission < 2 || API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
+                        API.sendChat("Users vote:  :+1: " + API.getRoomScore().positive + " | :-1: " + API.getRoomScore().negative + " | :purple_heart: " + API.getRoomScore().curates);
+                            Funbot.misc.ready = false;
+                            setTimeout(function(){ Funbot.misc.ready = true; }, Funbot.settings.cooldown * 1000);
+                        }
+                        break;
                         
                    case "version":j
                         if(API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
