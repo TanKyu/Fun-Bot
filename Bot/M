@@ -348,36 +348,28 @@ Funbot.misc.sex = [
 ":nail_care: nah"];
 
 Funbot.misc.nope = [
-"http://i.imgur.com/dEFHI.gif",
-];
+"http://i.imgur.com/dEFHI.gif"];
 
 Funbot.misc.hab = [
-"http://i.imgur.com/DYtNzlA.jpg",
-];
+"http://i.imgur.com/DYtNzlA.jpg"];
 
 Funbot.misc.dance = [
-"/me takes off heels, 'c'mon babe, on the dance floor' :dancer:",
-];
+"/me takes off heels, 'c'mon babe, on the dance floor' :dancer:"];
 
 Funbot.misc.sexy = [
-"i'm feeling kinda :/ from this track, keep it up bb",
-];
+"i'm feeling kinda :/ from this track, keep it up bb"];
 
 Funbot.misc.groove = [
-":notes: :dancers: :dancers: :dancer: :sparkles: :white_circle: :sparkles: :dancer: :dancers: :dancers: :notes:",
-];
+":notes: :dancers: :dancers: :dancer: :sparkles: :white_circle: :sparkles: :dancer: :dancers: :dancers: :notes:"];
 
 Funbot.misc.hot = [
-"this track is :fire: :wink:!",
-];
+"this track is :fire: :wink:!"];
 
 Funbot.misc.drinks = [
-":tropical_drink: Drinks all around :tropical_drink: take one, two? just take the whole tray ",
-];
+":tropical_drink: Drinks all around :tropical_drink: take one, two? just take the whole tray "];
 
 Funbot.misc.hab2 = [
-"http://i.imgur.com/4cfJFkJ.jpg",
-];
+"http://i.imgur.com/4cfJFkJ.jpg"];
 
 Funbot.misc.bondage = [
 "I wont stop untill u scream..k?",
@@ -386,14 +378,12 @@ Funbot.misc.bondage = [
 "you'll be crying by the end of the night",
 "who wants to be gagged first?",
 "just so you know, im not the submissive one",
-"....i'll think about it & get back to you :nail_care:",
-];
+"....i'll think about it & get back to you :nail_care:"];
 
 Funbot.misc.roleplay = [
 " :blue_car: :police_car: do you know why i pulled you over? :/",
 "O..onii-chan!! yamete!",
-"https://vine.co/v/OFpuQgDn2DH"
-];
+"https://vine.co/v/OFpuQgDn2DH"];
 
 Funbot.misc.babe = [
 "http://37.media.tumblr.com/8601a3e3f6a04aadd29611bc443ecb2b/tumblr_n3f5mjBq2I1qzg0ylo1_1280.jpg",
@@ -481,9 +471,7 @@ Funbot.misc.babe = [
 "https://41.media.tumblr.com/bc8ec439227c1079e5bc926cd0bf113c/tumblr_nkb29wE1VN1t65o83o1_540.jpg",
 "https://38.media.tumblr.com/95a02808d785ece0cd3e1294dd77cfbb/tumblr_nk07lcG9RZ1trpxklo3_250.gif",
 "https://40.media.tumblr.com/4dba4057aae1de007583ed806f05982d/tumblr_n8yu8t9kmv1tglgvpo1_1280.jpg",
-"https://40.media.tumblr.com/b40491a5a4f7b0ca8e9862b9f240454e/tumblr_njvujtdjQv1te5gbvo1_540.jpg"
-
-];
+"https://40.media.tumblr.com/b40491a5a4f7b0ca8e9862b9f240454e/tumblr_njvujtdjQv1te5gbvo1_540.jpg"];
  
 Funbot.pubVars.skipOnExceed;
 Funbot.pubVars.command = false;
@@ -2361,10 +2349,10 @@ function chatMe(msg)
                             var randomSentence = Math.floor(Math.random() * 1);
                             switch(randomSentence){
                                 case 0:
-                                    API.sendChat(", "+ Funbot.misc.nope[randomnope]);
+                                    API.sendChat(""+ Funbot.misc.nope[randomnope]);
                                     break;
                                 case 1:
-                                    API.sendChat(", "+ Funbot.misc.nope[randomnope]);
+                                    API.sendChat(""+ Funbot.misc.nope[randomnope]);
                                     break;
                             }
                         }else{
@@ -2373,10 +2361,10 @@ function chatMe(msg)
                             var randomSentence = Math.floor(Math.random() * 1);
                             switch(randomSentence){
                                 case 0:
-                                    API.sendChat(", "+ Funbot.misc.nope[randomnope]);
+                                    API.sendChat(""+ Funbot.misc.nope[randomnope]);
                                     break;
                                 case 1:
-                                    API.sendChat(", "+ Funbot.misc.nope[randomnope]);
+                                    API.sendChat(""+ Funbot.misc.nope[randomnope]);
                                     break;
                            }
                         }
@@ -2394,10 +2382,10 @@ function chatMe(msg)
                             var randomSentence = Math.floor(Math.random() * 1);
                             switch(randomSentence){
                                 case 0:
-                                    API.sendChat(", "+ Funbot.misc.hab[randomhab]);
+                                    API.sendChat(""+ Funbot.misc.hab[randomhab]);
                                     break;
                                 case 1:
-                                    API.sendChat(", "+ Funbot.misc.hab[randomhab]);
+                                    API.sendChat(""+ Funbot.misc.hab[randomhab]);
                                     break;
                             }
                         }else{
@@ -2406,10 +2394,10 @@ function chatMe(msg)
                             var randomSentence = Math.floor(Math.random() * 1);
                             switch(randomSentence){
                                 case 0:
-                                    API.sendChat(", "+ Funbot.misc.hab[randomhab]);
+                                    API.sendChat(""+ Funbot.misc.hab[randomhab]);
                                     break;
                                 case 1:
-                                    API.sendChat(", "+ Funbot.misc.hab[randomhab]);
+                                    API.sendChat(""+ Funbot.misc.hab[randomhab]);
                                     break;
                            }
                         }
@@ -2427,10 +2415,10 @@ function chatMe(msg)
                             var randomSentence = Math.floor(Math.random() * 1);
                             switch(randomSentence){
                                 case 0:
-                                    API.sendChat(", "+ Funbot.misc.hab[randomhab2]);
+                                    API.sendChat(""+ Funbot.misc.hab[randomhab2]);
                                     break;
                                 case 1:
-                                    API.sendChat(", "+ Funbot.misc.hab[randomhab2]);
+                                    API.sendChat(""+ Funbot.misc.hab[randomhab2]);
                                     break;
                             }
                         }else{
@@ -2439,10 +2427,10 @@ function chatMe(msg)
                             var randomSentence = Math.floor(Math.random() * 1);
                             switch(randomSentence){
                                 case 0:
-                                    API.sendChat(", "+ Funbot.misc.hab[randomhab2]);
+                                    API.sendChat(""+ Funbot.misc.hab[randomhab2]);
                                     break;
                                 case 1:
-                                    API.sendChat(", "+ Funbot.misc.hab[randomhab2]);
+                                    API.sendChat(""+ Funbot.misc.hab[randomhab2]);
                                     break;
                            }
                         }
@@ -2460,10 +2448,10 @@ function chatMe(msg)
                             var randomSentence = Math.floor(Math.random() * 1);
                             switch(randomSentence){
                                 case 0:
-                                    API.sendChat(", "+ Funbot.misc.hab[randombondage]);
+                                    API.sendChat(""+ Funbot.misc.hab[randombondage]);
                                     break;
                                 case 1:
-                                    API.sendChat(", "+ Funbot.misc.hab[randombondage]);
+                                    API.sendChat(""+ Funbot.misc.hab[randombondage]);
                                     break;
                             }
                         }else{
@@ -2472,10 +2460,10 @@ function chatMe(msg)
                             var randomSentence = Math.floor(Math.random() * 1);
                             switch(randomSentence){
                                 case 0:
-                                    API.sendChat(", "+ Funbot.misc.hab[randombondage]);
+                                    API.sendChat(""+ Funbot.misc.hab[randombondage]);
                                     break;
                                 case 1:
-                                    API.sendChat(", "+ Funbot.misc.hab[randombondage]);
+                                    API.sendChat(""+ Funbot.misc.hab[randombondage]);
                                     break;
                            }
                         }
