@@ -345,8 +345,7 @@ Funbot.misc.sex2 = [
 " :eyes:",
 " :point_right: :ok_hand:?",
 " :bikini:  :eggplant: :eyes: :rocket: :/",
-" :nail_care: nah",
-"http://media.giphy.com/media/3efuhK1gdRGsE/giphy.gif"];
+" :nail_care: nah"];
 
 Funbot.misc.nope = [
 "http://i.imgur.com/dEFHI.gif",
@@ -372,6 +371,9 @@ Funbot.misc.drinks = [
 
 Funbot.misc.hab2 = [
 "http://i.imgur.com/4cfJFkJ.jpg"];
+
+Funbot.misc.commands = [
+"http://i.imgur.com/IHcp8Hk.jpg"];
 
 Funbot.misc.bondage = [
 "I wont stop untill u scream..k?",
@@ -1862,10 +1864,10 @@ function chatMe(msg)
                             var randomSentence = Math.floor(Math.random() * 1);
                             switch(randomSentence){
                                 case 0:
-                                    API.sendChat(""+ Funbot.misc.dogfact[randomDogfact]);
+                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.dogfact[randomDogfact]);
                                     break;
                                 case 1:
-                                    API.sendChat(""+ Funbot.misc.dogfact[randomDogfact]);
+                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.dogfact[randomDogfact]);
                                     break;
                             }
                         }else{
@@ -1874,10 +1876,10 @@ function chatMe(msg)
                             var randomSentence = Math.floor(Math.random() * 1);
                             switch(randomSentence){
                                 case 0:
-                                    API.sendChat(""+ Funbot.misc.dogfact[randomdogfact]);
+                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.dogfact[randomdogfact]);
                                     break;
                                 case 1:
-                                    API.sendChat(""+ Funbot.misc.dogfact[randomDogfact]);
+                                    API.sendChat("@" + data.from + ", "+ Funbot.misc.dogfact[randomDogfact]);
                                     break;
                            }
                         }
@@ -2117,7 +2119,40 @@ function chatMe(msg)
                             Funbot.misc.ready = false;
                             setTimeout(function(){ Funbot.misc.ready = true; }, Funbot.settings.cooldown * 1000);
                         }
-                        break;      
+                        break;    
+
+                    case "commands":
+                        if(typeof command[1] == "undefined"){
+                            var crowd = API.getUsers();
+                            var randomUser = Math.floor(Math.random() * crowd.length);
+                            var randomcommands = Math.floor(Math.random() * Funbot.misc.commands.length);
+                            var randomSentence = Math.floor(Math.random() * 1);
+                            switch(randomSentence){
+                                case 0:
+                                    API.sendChat(""+ Funbot.misc.commands[randomcommands]);
+                                    break;
+                                case 1:
+                                    API.sendChat(""+ Funbot.misc.commands[randomcommands]);
+                                    break;
+                            }
+                        }else{
+                            if(command[1].indexOf("@") === 0) command[1] = command[1].substring(1);
+                            var randomcommands = Math.floor(Math.random() * Funbot.misc.commands.length);
+                            var randomSentence = Math.floor(Math.random() * 1);
+                            switch(randomSentence){
+                                case 0:
+                                    API.sendChat(""+ Funbot.misc.commands[randomcommands]);
+                                    break;
+                                case 1:
+                                    API.sendChat(""+ Funbot.misc.commands[randomcommands]);
+                                    break;
+                           }
+                        }
+                       if(API.getUser(fromID).permission < 2 || API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
+                            Funbot.misc.ready = false;
+                            setTimeout(function(){ Funbot.misc.ready = true; }, Funbot.settings.cooldown * 1000);
+                        }
+                        break;           
 
                   case "bedsqueak":
                         if(typeof command[1] == "undefined"){
@@ -2515,9 +2550,8 @@ function chatMe(msg)
                             Funbot.misc.ready = false;
                             setTimeout(function(){ Funbot.misc.ready = true; }, Funbot.settings.cooldown * 1000);
                         }
-                        break;  
-                                                                       
-                    case "selfie":
+                        break;                                                 
+
                     case "babe":
                     case "bae":
                         if(typeof command[1] == "undefined"){
