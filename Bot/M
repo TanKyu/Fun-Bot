@@ -373,6 +373,20 @@ Funbot.misc.drinks = [
 Funbot.misc.hab2 = [
 "http://i.imgur.com/4cfJFkJ.jpg"];
 
+Funbot.misc.bondage = [
+"I wont stop untill u scream..k?",
+"Fuck a safe word,",
+"/me cracks whip",
+"you'll be crying by the end of the night",
+"who wants to be gagged first?",
+"just so you know, im not the submissive one",
+"....i'll think about it & get back to you :nail_care:"];
+
+Funbot.misc.roleplay = [
+" :blue_car: :police_car: do you know why i pulled you over? :/",
+"O..onii-chan!! yamete!",
+"https://vine.co/v/OFpuQgDn2DH"];
+
 Funbot.misc.babe = [
 "http://37.media.tumblr.com/8601a3e3f6a04aadd29611bc443ecb2b/tumblr_n3f5mjBq2I1qzg0ylo1_1280.jpg",
 "https://38.media.tumblr.com/7b1a344883a5d164192f88fc08875c70/tumblr_n98khsfkmA1qkegsbo1_500.jpg",
@@ -453,13 +467,13 @@ Funbot.misc.babe = [
 "https://36.media.tumblr.com/84117e6c1f9437240aca0811259d76c3/tumblr_miwj6mhXrY1rpqy2eo1_500.jpg",
 "http://24.media.tumblr.com/tumblr_ly115hmEu91rnrau2o1_400.gif",
 "http://photos1.blogger.com/blogger/1311/106/320/chaka.jpg",
-"http://i.imgur.com/nG2RBLN.jpg",
-"http://i.imgur.com/UomT0GY.png",
-"http://i.imgur.com/XELN0ds.jpg",
-"http://i.imgur.com/z5SlIiu.jpg",
-"http://imgur.com/Zgd36xb",
 "http://i.imgur.com/ciA9L1E.jpg"
-];
+"https://40.media.tumblr.com/3c1996ae8f5ddf08eaae88ffe420047e/tumblr_nkemk9xnps1r4lihzo1_540.png",
+"https://41.media.tumblr.com/d4a9c93b929a8482e8f2789890bbfd29/tumblr_n7kpyqO1dS1te5gbvo1_1280.jpg",
+"https://41.media.tumblr.com/bc8ec439227c1079e5bc926cd0bf113c/tumblr_nkb29wE1VN1t65o83o1_540.jpg",
+"https://38.media.tumblr.com/95a02808d785ece0cd3e1294dd77cfbb/tumblr_nk07lcG9RZ1trpxklo3_250.gif",
+"https://40.media.tumblr.com/4dba4057aae1de007583ed806f05982d/tumblr_n8yu8t9kmv1tglgvpo1_1280.jpg",
+"https://40.media.tumblr.com/b40491a5a4f7b0ca8e9862b9f240454e/tumblr_njvujtdjQv1te5gbvo1_540.jpg"];
  
 Funbot.pubVars.skipOnExceed;
 Funbot.pubVars.command = false;
