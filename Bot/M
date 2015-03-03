@@ -638,8 +638,8 @@ function chatMe(msg)
             if(Funbot.misc.ready || Funbot.admins.indexOf(fromID) > -1 || API.getUser(data.fromID).permission > 1 || API.getUser(fromID).permission < 2){
                 switch(command[0].toLowerCase()){
  
-                case "command":
-                case "commands":
+                case "csdf":
+                case "ds":
                         if(typeof command[1] == ""){
                             API.sendChat(data.from+" http://i.imgur.com/Lse2HkO.jpg ");
                         }else if(command[1].indexOf("@") > -1){
