@@ -1406,62 +1406,6 @@ function chatMe(msg)
                         }
                         break;
 
-                   case "sex":
-                        if(typeof command[1] == "@"){
-                            var crowd = API.getUsers();
-                            var randomUser = Math.floor(Math.random() * crowd.length);
-                            var randomSentence = Math.floor(Math.random() * 5);
-                            switch(randomSentence){
-                                case 0:
-                                    API.sendChat(" "+command[1]+"the beds »» that way, find someone to join you ;)");
-                                    break;
-                                case 1:
-                                    API.sendChat(" "+command[1]+"the beds »» that way, find someone to join you ;)");
-                                    setTimeout(function(){
-                                        API.sendChat("or maybe I should come with you~");
-                                    }, 650);
-                                    break;
-                                case 2:
-                                    API.sendChat(" "+command[1]+" nah");
-                                    break;
-                                case 3:
-                                    API.sendChat("/me ties up"+command[1]+"'s arms & throws onto bed");
-                                    break;
-                                case 4:
-                                    API.sendChat(" "+command[1]+" you don't look like you have the stamina for me sweetie");
-                                    break;
-                            }
-                        }else{
-                            if(command[1].indexOf("@") === 0) command[1] = command[1].substring(1);
-                            var crowd = API.getUsers();
-                            var randomUser = Math.floor(Math.random() * crowd.length);
-                            var randomSentence = Math.floor(Math.random() * 5);
-                            switch(randomSentence){
-                                case 0:
-                                    API.sendChat(" "+command[1]+"the beds »» that way, find someone to join you ;)");
-                                    break;
-                                case 1:
-                                    API.sendChat(" "+command[1]+"the beds »» that way, find someone to join you ;)");
-                                    setTimeout(function(){
-                                        API.sendChat("or maybe I should come with you~");
-                                    }, 650);
-                                    break;
-                                case 2:
-                                    API.sendChat(" "+command[1]+" nah");
-                                    break;
-                                case 3:
-                                    API.sendChat("/me ties up"+command[1]+"'s arms & throws on to bed");
-                                    break;
-                                case 4:
-                                    API.sendChat(" "+command[1]+" you don't look like you have the stamina for me sweetie");
-                                    break;
-                            }
-                        }
-                       if(API.getUser(fromID).permission < 2 || API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
-                            Funbot.misc.ready = false;
-                            setTimeout(function(){ Funbot.misc.ready = true; }, Funbot.settings.cooldown * 1000);
-                        }
-                        break;
 
                     case "seduce":
                         if(typeof command[1] == "@"){
