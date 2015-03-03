@@ -816,14 +816,63 @@ function chatMe(msg)
                            }
                         }
                         break;
+
+                    case "N":
+                        if(API.getUser(fromID).permission < 2 || API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
+                        if(typeof command[1] === "undefined"){
+                           API.sendChat(" :notes: :dancers: :dancers: :dancer: :sparkles: :white_circle: :sparkles: :dancer: :dancers: :dancers: :notes:");
                            }
                         }
                         break;
 
-                    case "bbg":
+                    case "A":
+                        if(API.getUser(fromID).permission < 2 || API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
+                        if(typeof command[1] === "undefined"){
+                           API.sendChat(" :tropical_drink: Drinks all around :tropical_drink: take one, two? just take the whole tray ");
+                           }
+                        }
+                        break;
+
+                    case "D":
+                        if(API.getUser(fromID).permission < 2 || API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
+                        if(typeof command[1] === "undefined"){
+                           API.sendChat("/me takes off heels");
+                                    setTimeout(function(){
+                                        API.sendChat("c'mon babe, on the dance floor");
+                                    }, 650);
+                                    break;
+                           }
+                        }
+                        break;
+
+                    case "s":
                         if(API.getUser(fromID).permission < 2 || API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
                         if(typeof command[1] === "undefined"){
                            API.sendChat(" http://cdn.memegenerator.net/instances/500x/47747240.jpg ");
+                           }
+                        }
+                        break;
+
+                    case "Ds":
+                        if(API.getUser(fromID).permission < 2 || API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
+                        if(typeof command[1] === "undefined"){
+                           API.sendChat(" http://cdn.memegenerator.net/instances/500x/48269038.jpg ");
+                           }
+                        }
+                        break;
+
+                    case "sddsa":
+                        if(API.getUser(fromID).permission < 2 || API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
+                        if(typeof command[1] === "undefined"){
+                           API.sendChat(" http://cdn.memegenerator.net/instances/500x/47747715.jpg ");
+                           }
+                        }
+                        break;
+
+                    case "fdsa":
+                        if(API.getUser(fromID).permission < 2 || API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
+                        if(typeof command[1] === "undefined"){
+                           API.sendChat(" http://i.imgur.com/dEFHI.gif ");
                            }
                         }
                         break;
