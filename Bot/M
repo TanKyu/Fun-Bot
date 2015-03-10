@@ -490,7 +490,8 @@ Funbot.misc.babe = [
 "http://33.media.tumblr.com/f6ed1da5d4fe7d77ba2542e2e705de69/tumblr_ndeprt0kvx1rk74v1o1_400.gif",
 "http://33.media.tumblr.com/f6ed1da5d4fe7d77ba2542e2e705de69/tumblr_ndeprt0kvx1rk74v1o1_400.gif",
 "http://33.media.tumblr.com/b78aa163ddfa617aeb192182e64e9e32/tumblr_ndjr4uQ8nD1skqlxjo1_1280.jpg",
-"https://s-media-cache-ak0.pinimg.com/originals/03/71/c8/0371c8a55b0e9923503a9e70c50fafde.jpg"];
+"https://s-media-cache-ak0.pinimg.com/originals/03/71/c8/0371c8a55b0e9923503a9e70c50fafde.jpg",
+"http://40.media.tumblr.com/5918885565d18cff69ed2102ffbc50bc/tumblr_nhgdtzDEtN1u74kr8o1_1280.jpg"];
  
 Funbot.pubVars.skipOnExceed;
 Funbot.pubVars.command = false;
