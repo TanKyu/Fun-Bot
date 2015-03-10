@@ -478,7 +478,19 @@ Funbot.misc.babe = [
 "https://41.media.tumblr.com/bc8ec439227c1079e5bc926cd0bf113c/tumblr_nkb29wE1VN1t65o83o1_540.jpg",
 "https://38.media.tumblr.com/95a02808d785ece0cd3e1294dd77cfbb/tumblr_nk07lcG9RZ1trpxklo3_250.gif",
 "https://40.media.tumblr.com/4dba4057aae1de007583ed806f05982d/tumblr_n8yu8t9kmv1tglgvpo1_1280.jpg",
-"https://40.media.tumblr.com/b40491a5a4f7b0ca8e9862b9f240454e/tumblr_njvujtdjQv1te5gbvo1_540.jpg"];
+"https://40.media.tumblr.com/b40491a5a4f7b0ca8e9862b9f240454e/tumblr_njvujtdjQv1te5gbvo1_540.jpg",
+"http://data1.whicdn.com/images/81051178/large.jpg",
+"http://40.media.tumblr.com/8ab15adea3c34d8bc17a773b3b07ed36/tumblr_ncun7fGvJX1qld57yo1_1280.jpg",
+"http://41.media.tumblr.com/48ea399db3722a5fe24fba1e1b5535f4/tumblr_n7nw0c6CQi1qh8g8ko1_1280.jpg",
+"https://33.media.tumblr.com/8f667e4dc1d6687ba4cd07436ea8b72e/tumblr_njpj3mapSG1tucvlpo1_400.gif",
+"https://41.media.tumblr.com/7207a3289e69b502b215edf7fdb108f5/tumblr_nkm0j5X8Rt1unrl59o4_1280.jpg",
+"https://40.media.tumblr.com/6f71aa69ab54e7c6ab323ae8e6c2f71b/tumblr_nk03mnOADy1r0120jo2_1280.jpg",
+"https://40.media.tumblr.com/00f43e06ea273650006f32b4d5b4b787/tumblr_net4vskTRx1qfi77ho1_1280.jpg",
+"https://33.media.tumblr.com/58129a384908fcc314277327403f114f/tumblr_nin5yeqfjo1tqp5fto2_250.gif",
+"http://33.media.tumblr.com/f6ed1da5d4fe7d77ba2542e2e705de69/tumblr_ndeprt0kvx1rk74v1o1_400.gif",
+"http://33.media.tumblr.com/f6ed1da5d4fe7d77ba2542e2e705de69/tumblr_ndeprt0kvx1rk74v1o1_400.gif",
+"http://33.media.tumblr.com/b78aa163ddfa617aeb192182e64e9e32/tumblr_ndjr4uQ8nD1skqlxjo1_1280.jpg",
+"https://s-media-cache-ak0.pinimg.com/originals/03/71/c8/0371c8a55b0e9923503a9e70c50fafde.jpg"];
  
 Funbot.pubVars.skipOnExceed;
 Funbot.pubVars.command = false;
