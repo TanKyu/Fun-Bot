@@ -2628,6 +2628,7 @@ function chatMe(msg)
                         break;                                                 
 
                     case "babe":
+                    case "selfie":
                     case "bae":
                         if(typeof command[1] == "undefined"){
                             var crowd = API.getUsers();
