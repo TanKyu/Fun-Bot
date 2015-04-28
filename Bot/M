@@ -491,7 +491,32 @@ Funbot.misc.babe = [
 "http://33.media.tumblr.com/f6ed1da5d4fe7d77ba2542e2e705de69/tumblr_ndeprt0kvx1rk74v1o1_400.gif",
 "http://33.media.tumblr.com/b78aa163ddfa617aeb192182e64e9e32/tumblr_ndjr4uQ8nD1skqlxjo1_1280.jpg",
 "https://s-media-cache-ak0.pinimg.com/originals/03/71/c8/0371c8a55b0e9923503a9e70c50fafde.jpg",
-"http://40.media.tumblr.com/5918885565d18cff69ed2102ffbc50bc/tumblr_nhgdtzDEtN1u74kr8o1_1280.jpg"];
+"http://40.media.tumblr.com/5918885565d18cff69ed2102ffbc50bc/tumblr_nhgdtzDEtN1u74kr8o1_1280.jpg",
+"https://36.media.tumblr.com/87a505872499660b2f18c43872597164/tumblr_nmgletHFP11sqhjvzo1_540.jpg",
+"https://33.media.tumblr.com/8dcab974ff1fa2f83c7b8acb258a8a8e/tumblr_mx5pfa3oyE1qjqxmoo1_400.gif",
+"http://i.imgur.com/iM3qNz6.jpg",
+"http://i.imgur.com/7p3Ge10.jpg",
+"http://i.imgur.com/3evvrzu.jpg",
+"http://i.imgur.com/boMqfda.jpg",
+"http://i.imgur.com/wTTnQzN.jpg",
+"http://i.imgur.com/XOZCh2D.jpg",
+"http://i.imgur.com/64oP1PZ.jpg",
+"http://i.imgur.com/JCfk8ri.png",
+"http://i.imgur.com/0ah7FlQ.png",
+"http://i.imgur.com/Hqo8Cx0.png",
+"http://i.imgur.com/Z6YQWfi.jpg",
+"http://i.imgur.com/YQ0NRTa.jpg",
+"http://i.imgur.com/8a8nRNL.jpg",
+"http://i.imgur.com/LxKJHCT.jpg",
+"http://i.imgur.com/o5HbWgg.jpg",
+"http://i.imgur.com/6LCjz3y.jpg",
+"http://i.imgur.com/45ca8v2.jpg",
+"http://i.imgur.com/CEGGLqr.jpg",
+"http://i.imgur.com/8fOWwbm.png",
+"http://i.imgur.com/AQeYM2c.jpg",
+"http://i.imgur.com/J4zTBgY.jpg",
+"http://i.imgur.com/OxdFavc.jpg",
+"http://stream1.gifsoup.com/view8/20150417/5198682/ha-got-em-o.gif"];
  
 Funbot.pubVars.skipOnExceed;
 Funbot.pubVars.command = false;
