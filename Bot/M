@@ -306,7 +306,8 @@ Funbot.misc.lapdance = [
 " take a seat babe ;)",
 " no touching, k?",
 "....i'll think about it & get back to you :nail_care:",
-"that'll be $20....+ tax"];
+"that'll be $20....+",
+"have a seat, ill be...right...back..."];
 
 Funbot.misc.bedsqueak = [
 "heh you're gonna have to work hard to make my bed rock~",
@@ -345,7 +346,7 @@ Funbot.misc.sex2 = [
 " ~_~",
 " :eyes:",
 " :point_right: :ok_hand:?",
-" :bikini:  :eggplant: :eyes: :rocket: :/",
+" :bikini:  :eggplant: :eyes: :rocket: :smirk:",
 " :nail_care: nah"];
 
 Funbot.misc.nope = [
@@ -359,7 +360,7 @@ Funbot.misc.dance = [
 "/me takes off heels, 'c'mon babe, on the dance floor' :dancer:"];
 
 Funbot.misc.sexy = [
-"i'm feeling kinda :/ from this track, keep it up bb"];
+"i'm feeling kinda :smirk: from this track, keep it up bb"];
 
 Funbot.misc.groove = [
 ":notes: :dancers: :dancers: :dancer: :sparkles: :white_circle: :sparkles: :dancer: :dancers: :dancers: :notes:"];
@@ -389,7 +390,7 @@ Funbot.misc.bondage = [
 "....i'll think about it & get back to you :nail_care:"];
 
 Funbot.misc.roleplay = [
-" :blue_car: :police_car: do you know why i pulled you over? :/",
+" :blue_car: :police_car: do you know why i pulled you over? :smirk:",
 "O..onii-chan!! yamete!",
 "https://vine.co/v/OFpuQgDn2DH"];
 
@@ -510,7 +511,53 @@ Funbot.misc.babe = [
 "http://i.imgur.com/4zFs4ys.jpg",
 "http://i.imgur.com/OARPNtw.jpg",
 "http://i.imgur.com/mwj3QrE.jpg",
-"http://i.imgur.com/XR7ISQH.jpg"];
+"http://i.imgur.com/XR7ISQH.jpg",
+"http://i.imgur.com/Jz0Vubb.jpg",
+"http://i.imgur.com/3CHXs8V.jpg",
+"http://i.imgur.com/Kp3iLF6.jpg",
+"http://i.imgur.com/Wc5bBGf.jpg",
+"http://i.imgur.com/R0XZRVU.jpg",
+"http://i.imgur.com/V9lFYIi.jpg",
+"http://i.imgur.com/3iimwiU.jpg",
+"http://i.imgur.com/DCuLl6b.jpg",
+"http://i.imgur.com/oXwVGay.jpg",
+"http://i.imgur.com/3YtleEt.jpg",
+"http://i.imgur.com/S8QCsNm.jpg",
+"http://i.imgur.com/v5EFVwW.jpg",
+"http://i.imgur.com/B0nG67y.jpg",
+"http://i.imgur.com/w05Y3fW.jpg",
+"http://i.imgur.com/2yZ85qi.jpg",
+"http://i.imgur.com/VjHS7XC.jpg",
+"http://i.imgur.com/cHtY9XT.jpg",
+"http://i.imgur.com/anOY8DE.jpg",
+"http://i.imgur.com/4qftRwg.jpg",
+"http://i.imgur.com/YX6fsm2.jpg",
+"http://i.imgur.com/P2d2cbS.png",
+"http://i.imgur.com/z0spy9W.jpg",
+"http://i.imgur.com/4hR9my1.jpg",
+"http://i.imgur.com/kBo5cgd.jpg",
+"http://i.imgur.com/QVKIMuF.jpg",
+"http://i.imgur.com/I8wfhAN.jpg",
+"http://i.imgur.com/ezx6id6.jpg",
+"http://i.imgur.com/AHJujYV.jpg",
+"http://i.imgur.com/hTwDQAQ.jpg",
+"http://i.imgur.com/DIjjNVD.jpg",
+"http://i.imgur.com/kRtDig9.jpg",
+"http://i.imgur.com/YkHJmvq.jpg",
+"http://i.imgur.com/WWeAnfn.jpg",
+"http://i.imgur.com/N96krQT.jpg",
+"http://i.imgur.com/ay7Uzu5.jpg",
+"http://i.imgur.com/T65bQT2.jpg",
+"http://i.imgur.com/P6UxT4A.jpg",
+"http://i.imgur.com/gMKdfEO.jpg",
+"http://i.imgur.com/hoKQYO1.jpg",
+"http://i.imgur.com/rejJUNz.jpg",
+"http://i.imgur.com/r6EUESA.jpg",
+"http://i.imgur.com/Cibc3GD.jpg",
+"http://i.imgur.com/xOdxLr5.jpg",
+"http://i.imgur.com/WrdZdY6.jpg",
+"http://i.imgur.com/OSEkReN.jpg",
+"http://i.imgur.com/S0BtPIg.jpg",];
  
 Funbot.pubVars.skipOnExceed;
 Funbot.pubVars.command = false;
@@ -834,7 +881,7 @@ function chatMe(msg)
                     case "sdfs":
                         if(API.getUser(fromID).permission < 2 || API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
                         if(typeof command[1] === "undefined"){
-                           API.sendChat(" im feeling kind :/ from this track @"+ API.getDJ().username +" keep it up bb");
+                           API.sendChat(" im feeling kind :smirk: from this track @"+ API.getDJ().username +" keep it up bb");
                            }
                         }
                         break;
@@ -842,7 +889,7 @@ function chatMe(msg)
                     case "bed":
                         if(API.getUser(fromID).permission < 2 || API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
                         if(typeof command[1] === "undefined"){
-                           API.sendChat("@"+ data.from +" the bedroom is » that way, protection in the top left dresser drawer :/ .");
+                           API.sendChat("@"+ data.from +" the bedroom is » that way, protection in the top left dresser drawer :smirk: .");
                            }
                         }
                         break;
@@ -1526,7 +1573,7 @@ function chatMe(msg)
                                     API.sendChat("/me Pulls @"+command[1]+" hair & slaps ass");
                                     break;
                                 case 8:
-                                    API.sendChat("/me unbuttons shirt. :/");
+                                    API.sendChat("/me unbuttons shirt. :smirk:");
                                     break;
                             }
                         }else{
@@ -1558,7 +1605,7 @@ function chatMe(msg)
                                     API.sendChat("/me Pulls @"+command[1]+" hair & slaps ass");
                                     break;
                                 case 8:
-                                    API.sendChat("/me unbuttons shirt. :/");
+                                    API.sendChat("/me unbuttons shirt. :smirk:");
                                     break;
                             }
                         }
@@ -2792,7 +2839,7 @@ function chatMe(msg)
         }
         if(API.getUser(fromID).permission < 2 || API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
             if(msg.indexOf("mistress bot") !== -1 || msg.indexOf("@MISTRESS_Bot") !== -1){
-                var youMsg = ["hey bae","heyy baby",":/ whats up?",":blush: hey you","huh hunny?"];
+                var youMsg = ["hey bae","heyy baby",":smirk: whats up?",":blush: hey you","huh hunny?"];
                 API.sendChat("@" + data.from + " " + youMsg[Math.floor(Math.random() * youMsg.length)]);
                     Funbot.misc.ready = false;
                     setTimeout(function(){ Funbot.misc.ready = true; }, Funbot.settings.cooldown * 1000);
@@ -2808,7 +2855,7 @@ function chatMe(msg)
         }
         if(API.getUser(fromID).permission < 2 || API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
             if(msg.indexOf("@MISTRESS_Bot") !== -1){
-                var heyMsg = ["hey bae","heyy baby",":/ whats up?",":blush: hey you","huh hunny?"];
+                var heyMsg = ["hey bae","heyy baby",":smirk: whats up?",":blush: hey you","huh hunny?"];
                 API.sendChat("@" + data.from + " " + heyMsg[Math.floor(Math.random() * heyMsg.length)]);
                     Funbot.misc.ready = false;
                     setTimeout(function(){ Funbot.misc.ready = true; }, Funbot.settings.cooldown * 1000);
@@ -2816,14 +2863,14 @@ function chatMe(msg)
         }
         if(API.getUser(fromID).permission < 2 || API.getUser(fromID).permission > 1 || Funbot.admins.indexOf(fromID) > -1){
             if(msg.indexOf("mistress bot what do you look like") !== -1 || msg.indexOf("what do you look like bot") !== -1 || msg.indexOf("are u sexy bot") !== -1 || msg.indexOf("are you sexy bot") !== -1 || msg.indexOf("what do u look like bot") !== -1 || msg.indexOf("your hot bot") !== -1 || msg.indexOf("ur hot bot") !== -1 || msg.indexOf("mistress bot are u sexy") !== -1 || msg.indexOf("sexy bot") !== -1 || msg.indexOf("ur sexy bot") !== -1 || msg.indexOf("your sexy bot") !== -1){
-                var meMsg = ["well if you type =.babe try to guess which is me","type =.babe and see for yourself",":/ type=.babe & gues who i am"];
+                var meMsg = ["well if you type =.babe try to guess which is me","type =.babe and see for yourself",":smirk: type=.babe & gues who i am"];
                 API.sendChat("@" + data.from + " " + meMsg[Math.floor(Math.random() * meMsg.length)]);
                     Funbot.misc.ready = false;
                     setTimeout(function(){ Funbot.misc.ready = true; }, Funbot.settings.cooldown * 1000);
                 }
         }
         if(msg.indexOf("i got to go") !== -1 || msg.indexOf("igtg") !== -1 || msg.indexOf("gtg") !== -1 || msg.indexOf("be back") !== -1 || msg.indexOf("going off") !== -1 || msg.indexOf("off to") !== -1 || msg.indexOf("have to go") !== -1 || msg.indexOf("bye bot") !== -1 || msg.indexOf("bot bye") !== -1){
-        var AfkMsg = ["See ya bae!","Awww, See ya babe.","Glad you came by thanks! :kissing_heart:","Thanks for coming. see you soon :/ ! :blue_heart:"];
+        var AfkMsg = ["See ya bae!","Awww, See ya babe.","Glad you came by thanks! :kissing_heart:","Thanks for coming. see you soon :smirk: ! :blue_heart:"];
             API.sendChat("@" + data.from + " " + AfkMsg[Math.floor(Math.random() * AfkMsg.length)]);
         }
         if(msg.indexOf(':eyeroll:') > -1){
